@@ -93,7 +93,7 @@ Rails.application.configure do
     user_name:             ENV["EMAIL"],
     password:              ENV["PASSWORD"],
     authentication:        "plain",
-    domain:                "heroku.com",
+    domain:                "gmail.com",
     enable_starttls_auto:  true
 
 }
