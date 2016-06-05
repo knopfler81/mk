@@ -1,11 +1,10 @@
 class MessageMailer < ApplicationMailer
-
   # use your own email address here
-  default :to => "knopfler42@.gmail.com"
-  def message_me(message)
-     @message = message
+  default :to => "knopfler42@gmail.com"
 
-     mail from: @message.email, subject: @message.subject, body: @message.content
-   end
+  def message_me(msg)
+    @msg = msg
 
+    mail from: @msg.email, subject: @msg.subject, body: @msg.content
+  end
 end

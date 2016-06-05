@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-
+  
+  match '/messages',     to: 'messages#new',             via: 'get'
   resources :messages, only: [:new, :create]
+
 
    root "home#index"
    get  "concerts/index"         => "concerts#index"
