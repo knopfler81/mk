@@ -1,0 +1,10 @@
+Rails.application.routes.draw do
+
+  resources :messages, only: [:new, :create]
+
+   root "home#index"
+   get  "concerts/index"         => "concerts#index"
+   get  "concerts/tracker"       => "concerts#tracker"
+   get  "concerts/tracker/sion"  => "concerts#tracker"
+
+end

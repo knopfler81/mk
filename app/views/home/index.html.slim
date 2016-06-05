@@ -1,0 +1,78 @@
+.cover
+  .cover-image[style="background-image : url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff')"]
+  .container
+    .row
+      .col-md-12.text-center
+        h1.text-inverse
+          | Mark Knopfler
+        p.text-inverse
+          | Mark in summer long ago
+        br
+        br
+        =link_to root_path(@root, anchor: "about") do
+          i.fa.fa-4x.fa-arrow-down.fa-fw.hub.text-inverse
+.section
+  .container
+    .row
+      .col-md-4
+        =image_tag("mains/band.png", class:'band')
+      .col-md-8
+        h1#about.text-primary
+          | About the website
+        p
+          | "Mark In Summer Long Ago, refers to the very first time I saw Mark Knopfler on stage, the 9th July 1996 and to his wonderful song ,A Night In Summer Long Ago that I used to listen with my dearly loved grand mother. This website is to share with all the fans my passion of Mark Knopfler's music. reviews and pictures from the concerts I've atended and also about my meetings with the Man ! I hope You'll enjoy.
+.section
+  .container
+    .col-md-12
+      h1.text-center.text-primary
+        | Sections
+      p.text-center
+        | Click on the images to visit sections
+    .row
+      .col-md-4
+        = link_to concerts_index_path do
+          = image_tag("mains/concerts.jpg", class:"category")
+        h3.text-center
+          | Concerts
+      .col-md-4
+        = image_tag("mains/calendars.jpg", class:"category")
+        h3.text-center
+          | Calendars
+      .col-md-4
+        = image_tag("mains/events.jpg", class:"category")
+        h3.text-center
+          | Other events
+.section
+  .container
+    .col-md-12
+      h1.text-center.text-primary
+        | Related Mark Knopfler websites
+      p.text-center
+        | Click on the images to visit the related websites
+    .row
+      .col-md-4
+        = link_to "http://www.markknopfler.com/" do
+          = image_tag("mains/mkcom.jpg", class:"category")
+        h2
+          | Offcial MK Website
+        p
+          |  Official Mark Knopfler Website
+          |  Visit the very official MK website, tour dates, shop, annoucements...
+      .col-md-4
+        =link_to  "http://www.guyfletcher.co.uk/"  do
+          = image_tag("mains/gf.jpg", class:"category")
+        h2
+          | Guy Fletcher 
+        p
+          | A very intersting Website to keep in your favorites.
+          br
+          | Guy Fletcher runs here a forum, studio and tour diaries ! Have a look !
+      .col-md-4
+        = link_to "http://www.amarkintime.org/forum/" do
+          = image_tag("mains/forum.jpg", class:"category")
+        h2
+          | AMIT forum
+        p
+          | A very nice place to exchange with fans from all other the world! This a non official forum.
+          br
+          | Be cool and do not moan
