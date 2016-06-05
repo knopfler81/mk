@@ -84,13 +84,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://stark-dusk-54480.herokuapp.com/' }
     config.action_mailer.delivery_method = :smtp
 
-    ActionMailer::Base.smtp_settings = {
-    :address => "smtp.gmail.com",
-    :port => 587,
-    :authentication => :plain,
-    :email => ENV['EMAIL'],
-    :password => ENV['PASSWORD'],
-    :domain => "heroku.com",
-    :enable_strattls_auto => true
-  }
+    config.action_mailer.smtp_settings = {
+      user_name: ENV["EMAIL"],
+      password: ENV["PASSWORD"]
+    }
   end
