@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
       MessageMailer.message_me(@message).deliver_now
       redirect_to new_message_path, notice: "Thank you for your message."
     else
-      render :new
+      render new_message_path, norice: " Sorry your message could not be sent, try again"
     end
   end
 
