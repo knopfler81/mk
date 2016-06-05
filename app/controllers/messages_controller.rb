@@ -8,8 +8,8 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.valid?
-      MessageMailer.message_me(@message).deliver_now
-      redirect_to messages_path, notice: "Thank you for your message, I'll reply ASAP"
+      MessageMailer.message_me(@message).deliver
+       flash.now[:notice] = 'Thank you for your message'
     else
       render :new
     end
