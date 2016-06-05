@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.message_me(@message).deliver_now
-      redirect_to root_path, notice: "Thank you for your message, I'll reply ASAP"
+      redirect_to messages_path, notice: "Thank you for your message, I'll reply ASAP"
     else
       render :new
     end
