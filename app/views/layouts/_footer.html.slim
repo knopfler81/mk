@@ -3,16 +3,18 @@ footer.section.section-primary
     .row.text-center
       .col-xs-4.text-center
         small 
-          | © 
+          | © &nbsp;
           = Date.today.year 
-          | - Nelly Duclos
+          | &nbsp; Nelly Duclos
 
       .col-xs-4.text-center
+        = link_to new_message_path(@message) do
         i.fa.fa-bug.fa-fw.text-inverse
-        small
-          | Report a bug or typo
+        small.footer-text&nbsp; Report a bug or typos
 
       .col-xs-4.text-center
-        i.fa.fa-envelope-o.fa-fw.hub.text-inverse
-        small
-          | Contact me
+        = link_to new_message_path(@message) do
+          i.fa.fa-envelope-o.fa-fw.hub.text-inverse
+          small.footer-text&nbsp; Contact me
+            
+          
