@@ -1,2 +1,2 @@
-# ENV['EMAIL'] = 'myemail@gmail.com'
-# ENV['PASSWORD'] = 'PasswordShouldGoHere'
+ENV['EMAIL'] = 'knopfler42@gmail.com'
+ENV['PASSWORD'] = 'pouette'
