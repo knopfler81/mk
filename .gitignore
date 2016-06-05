@@ -16,5 +16,4 @@
 !/log/.keep
 /tmp
 
-#ignore ENV
-/config/initializers/app_env_vars.rb
+/.app_env_vars.rb
