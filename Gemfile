@@ -6,7 +6,7 @@ ruby "2.2.4"
 gem 'slim', '~> 3.0', '>= 3.0.7'
 
 
-gem 'mail_form'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use SCSS for stylesheets
