@@ -3,9 +3,9 @@
     .col-xs-offset-2.col-xs-8
       h3 Feel free to contact me !
       = simple_form_for @contact, html: {class: 'form-horizontal' } do |f|
-        = f.input :name, required: true
-        = f.input :email, required: true
-        = f.input :content, as: :text, required: true, input_html: {:rows => 10}
+        = f.input :name, placeholder: "Tell me your little name" ,required: true
+        = f.input :email, placeholder: "Please enter a valid email then I can reply" ,required: true
+        = f.input :message, as: :text, placeholder: "Report a bug, typos? Say 'Hi?' Anything else, feel free",required: true, input_html: {:rows => 10}
 
         .hidden
           = f.input :nickname, :hint => 'Leave this field blank!'
