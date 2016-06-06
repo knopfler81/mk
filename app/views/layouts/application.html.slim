@@ -13,5 +13,14 @@ html
     link href="//pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css"
   = render partial: "layouts/nav"
   body
+  
+  .container
+    - flash.each do |name, msg|
+      - if msg.is_a?(String)
+        div class=("alert alert-#{name == :notice ? "success" : "error"}") 
+          a.close data-dismiss="alert" 
+            | &times;
+          = content_tag :div, msg, :id => "flash_#{name}"
+          
     = yield
   =render partial: "layouts/footer"
