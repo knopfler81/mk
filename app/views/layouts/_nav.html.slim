@@ -12,9 +12,9 @@
         li.active
           = link_to "Home", root_path
         li
-          =link_to "Concerts", concerts_index_path
+          =link_to "Concerts", page_path('concerts/index')
         li
-          =link_to "Calendars"
+          =link_to "Calendars", page_path('calendars/index')
 
         li
           =link_to "Other Events"
