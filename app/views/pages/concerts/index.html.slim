@@ -1,15 +1,24 @@
-.tours-content
-  h1
-    |  Mark Knopfler's shows throught the years
-  p
-    |  Here are all the shows I've got lucky to attend trough the years, pictures and reviews
-  = image_tag("tours/goldenheart.jpg", class: "tours")
-  = image_tag("tours/sailing.jpg", class: "tours")
-  = image_tag("tours/shangrila.jpg", class: "tours")
-  = image_tag("tours/alltheroad.jpg", class: "tours")
-  = image_tag("tours/ktgc.jpg", class: "tours")
-  = image_tag("tours/getlucky.jpg", class: "tours")
-  = image_tag("tours/bob.jpg", class: "tours")
-  = image_tag("tours/privateering.jpg", class: "tours")
-  = link_to page_path('concerts/tracker')do
-    = image_tag("tours/tracker.jpg", class: "tours")
+.container
+  .row
+    .tours-content
+    
+      h1.text-primary
+        |  My Mark Knopfler's shows across the years
+      br
+      p
+        | Click on the covers to see pictures and reviews
+      
+      
+      = link_to page_path('concerts/tracker')do
+        = image_tag("tours/tracker.jpg", class: "tours")  
+        
+      = image_tag("tours/privateering.jpg", class: "tours")
+      = image_tag("tours/bob.jpg", class: "tours")
+      = image_tag("tours/getlucky.jpg", class: "tours")
+      = image_tag("tours/ktgc.jpg", class: "tours")
+      = image_tag("tours/alltheroad.jpg", class: "tours")
+      = image_tag("tours/shangrila.jpg", class: "tours")
+      = image_tag("tours/sailing.jpg", class: "tours")
+      = image_tag("tours/goldenheart.jpg", class: "tours")
+    
+  
