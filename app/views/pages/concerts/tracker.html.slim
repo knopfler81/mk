@@ -35,20 +35,24 @@
           br
         
       .col-xs-12.col-sm-6.col-md-4.col-lg-4.tracker-tour
-        =image_tag("concerts/sion2015/sion15-2.jpg", title:"Paris 1st night", class:'circle ')
-        h6 Paris 1st night
-        br
+        = link_to page_path('concerts/tracker/paris1') do
+          =image_tag("concerts/paris2015-1/paris15-1-0.jpg", title:"Paris 1st night", class:'circle ')
+          h6 Paris 1st night
+          br
+          
+      .col-xs-12.col-sm-6.col-md-4.col-lg-4.tracker-tour
+        = link_to page_path('concerts/tracker/london3') do
+          =image_tag("concerts/london2015-3/london15-3-0.jpg", title:"London RAH 2nd night", class:'circle ')
+          h6 London RAH 2nd night
+          br
         
       .col-xs-12.col-sm-6.col-md-4.col-lg-4.tracker-tour
-        =image_tag("concerts/sion2015/sion15-2.jpg", title:"London RAH 2nd night", class:'circle ')
-        h6 London RAH 2nd night
-        br
+        = link_to page_path('concerts/tracker/london2') do
+          =image_tag("concerts/london2015-2/london15-2-0.jpg", title:"London RAH 1st night", class:'circle ')
+          h6 London RAH 1st night
+          br
         
       .col-xs-12.col-sm-6.col-md-4.col-lg-4.tracker-tour
-        =image_tag("concerts/sion2015/sion15-2.jpg", title:"London RAH 1st night", class:'circle ')
-        h6 London RAH 1st night
-        br
-        
-      .col-xs-12.col-sm-6.col-md-4.col-lg-4.tracker-tour
-        =image_tag("concerts/sion2015/sion15-2.jpg", title:"London O2", class:'circle ')
-        h6 London O2
+        = link_to page_path('concerts/tracker/london1') do
+          =image_tag("concerts/london2015-1/london15-1-0.jpg", title:"London O2", class:'circle ')
+          h6 London O2
