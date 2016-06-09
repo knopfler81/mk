@@ -1,13 +1,13 @@
 .container
   .row.review-title
-    .col-xs-offset-2.col-xs-2
+    .col-md-2.col-md-2.col-xs-0
       =image_tag("concerts/saintjulien2015/saintjulien15-11.jpg", title:"Saint Julien En Genevois", class:'circle-title')
-    .col-xs-6
+    .col-md-6.col-xs-12
       h2.text-primary Saint Julien En Genevois, Festival Guitares En Scènes
       h4 16th July 2015
       
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p.text-bold Here we are again in this Saint Julien Town...
       p For the second time Mark was perfomring at Guitar En Scène's festival. As the band really loved this venue and its audience two years ago they asked to come back for our happiness !
       p We had to wait again outside and it was F***** hot (as Ingrid would say...) 38°C with no shade. Saint Julien has a little problem in therms of organisation but... we had to be patient and take it easy.
@@ -18,8 +18,7 @@
       p All the show was perfect, and once again I felt lucky happy.
 
       .row.set-list
-        .col-xs-offset-2.col-xs-4
-          br
+        .col-md-offset-2.col-md-4
           p 01. Broken Bones
           p 02. Corned Beef City
           p 03. Privateering
@@ -29,8 +28,7 @@
           p 07. Romeo and Juliet
           p 08. Sultans of Swing
         
-        .col-xs-4
-          br
+        .col-md-4
           p 09. Your Latest Trick (She's Gone as intro)
           p 10. Postguards from Paraguay
           p 11. Marbletown
@@ -40,12 +38,12 @@
           p 15. Going Home
           
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p It was very warm in there, that the water fight tradition restarted, I was soacked, but so refershed !
       p My last sentence would be to thank all the people involved of making this tour possible for me this year... Sharing room, car-pooling, Xmas presents etc... I won't mention anybody but people will reconize themselves ;)
 
   .row.photos-album
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       .carousel.slide#my-carousel
         .carousel-inner
           .active.item
@@ -92,13 +90,10 @@
         = render partial:('pages/concerts/carousel')
   
   .row
-    .col-xs-12.text-center
+    .col-md-12.text-center
       naV
         ul.pagination.pagination-sm
           h6.text-primary Jump to other concerts
-          / li
-          /   a aria-label="Previous" href="#" 
-          /     span aria-hidden="true"  &laquo;
           li
             a href="sion"  Sion
           li.active
@@ -117,11 +112,9 @@
             a href="london2"  London 2nd
           li
             a href="london1"  London 1st
-          / li
-          /   a aria-label="Next" href="#" 
-          /     span aria-hidden="true"  &raquo;
+
             br
               
-      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
 

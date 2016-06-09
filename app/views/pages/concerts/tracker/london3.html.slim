@@ -1,13 +1,13 @@
 .container
   .row.review-title
-    .col-xs-offset-2.col-xs-2
+    .col-md-2.col-md-2.col-xs-0
       =image_tag("concerts/london2015-3/london15-3-0.jpg", title:"London", class:'circle-title')
-    .col-xs-6
+    .col-md-6.col-xs-12
       h2.text-primary London Royal Albert Hall
       h4 26th May 2015
       
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p.text-bold Third concert in London and at the least the last in the UK.
       p As usual we had a pre-meeting with fans at The Stanhope Arms Pub. A couple of drinks, little food and then we walked again to the RAH !
       p Again I had a front row ticket! Thanks to Jeroen for having me a good seat!! I had exactly the same seat as the day before. I the middle, a little on the left from Mark !
@@ -17,8 +17,7 @@
       p Same old set lit, nothing has changed so far... I wonder if they will keep it this way, btw I wish I could hear more songs of the new album which is just a gem.  Anyway I am happy with all ! I got lucky to be there.
         
       .row.set-list
-        .col-xs-offset-2.col-xs-4
-          br
+        .col-md-offset-2.col-md-4
           p 01. Broken Bones
           p 02. Corned Beef City
           p 03. Privateering
@@ -28,8 +27,7 @@
           p 07. Laughs And Jokes And Drinks And Smokes
           p 08. Romeo And Juliet (With Nigel)
         
-        .col-xs-4
-          br
+        .col-md-4
           p 09. Sultans Of Swing
           p 10. Mighty Man
           p 11. Postcards From Paraguay
@@ -39,11 +37,11 @@
           p 15. So Far Away
           p 16. Wherever I Go (With Ruth Moody)
           p 17. Going Home (With Nigel)
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p My last sentence would be to thank all the people involved of making this tour possible for me this year... Sharing room, car-pooling, Xmas presents etc... I won't mention anybody but people will reconize themselves ;)
 
   .row.photos-album
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       .carousel.slide#my-carousel
         .carousel-inner
           .active.item
@@ -81,7 +79,7 @@
         = render partial:('pages/concerts/carousel')
         
   .row
-    .col-xs-12.text-center
+    .col-md-12.text-center
       naV
         ul.pagination.pagination-sm
           h6.text-primary Jump to other concerts
@@ -111,6 +109,6 @@
           /     span aria-hidden="true"  &raquo;
             br
               
-      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
 

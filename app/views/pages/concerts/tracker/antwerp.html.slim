@@ -1,13 +1,13 @@
 .container
   .row.review-title
-    .col-xs-offset-2.col-xs-2
+    .col-md-2.col-md-2.col-xs-0
       =image_tag("concerts/antwerp2015/antwerp15-0.jpg", title:"antwerp", class:'circle-title')
-    .col-xs-6
+    .col-md-6.col-xs-12
       h2.text-primary Antwerp Sportpaleis
       h4 5th June2015
       
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       / p.text-bold
       p After a long long ride with Laurent, we finally arrived at the meeting point, it took us four hours to reach Antwerp, and almost one hour to reach the Sportpaleis on the busy busy  Antwerp roads ! We stop there to rest and have food and drinks, then we just crossed the street to enter the Sportpaleis!
       p I got pretty shocked to see that we had to pay 0,40€ to use the batherooms, it is crazy, we pay for a concert ticket quite an amount, and we pay to pee.... glad I only needed to go once...BTW...
@@ -17,9 +17,7 @@
 
 
       .row.set-list
-        .col-xs-offset-2.col-xs-4
-          p.underline The very same set list as the last night in Paris
-          br
+        .col-md-offset-2.col-md-4
           p 01. Broken Bones
           p 02. Corned Beef City
           p 03. Privateering
@@ -29,8 +27,7 @@
           p 07. Skydiver (With Ruth Moody)
 
 
-        .col-xs-4
-          br
+        .col-md-4
           p 08. I Used To Could (With Nigel Hitchcock)
           p 09. Romeo And Juliet (With Nigel Hitchcock)
           p 10. Sultans Of Swing (Standing Ovation)
@@ -43,7 +40,7 @@
           p 17. Going Home
           
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p Again it was a good show, even if at the very begining the sound was not that good in my opinion, but it got better quickly!
       p There was only one standing ovation for "SOS", so as I said Belgium is a quiet audience. I hope tomorrow's dutch audience would be warmer ! 
       p My last sentence would be to thank all the people involved of making this tour possible for me this year... Sharing room, car-pooling, Xmas presents etc... I won't mention anybody but people will reconize thelselves ;)
@@ -51,7 +48,7 @@
 
      
   .row.photos-album
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       .carousel.slide#my-carousel
         .carousel-inner
           .active.item
@@ -85,7 +82,7 @@
            
         = render partial:('pages/concerts/carousel')
   .row
-    .col-xs-12.text-center
+    .col-md-12.text-center
       naV
         ul.pagination.pagination-sm
           h6.text-primary Jump to other concerts
@@ -115,6 +112,6 @@
           /     span aria-hidden="true"  &raquo;
             br
               
-      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
 

@@ -1,13 +1,13 @@
 .container
   .row.review-title
-    .col-xs-offset-2.col-xs-2
+    .col-md-2.col-md-2.col-xs-0
       =image_tag("concerts/paris2015-2/paris15-2-0.jpg", title:"paris", class:'circle-title')
-    .col-xs-6
+    .col-md-6.col-xs-12
       h2.text-primary Paris Le Zenith
       h4 3rd June 2015
       
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       / p.text-bold
       p
       p So here we are, second night in Le Zenith, I got almost the same seat a little bit closer to Mark!
@@ -22,7 +22,7 @@
 
 
       .row.set-list
-        .col-xs-offset-1.col-xs-5
+        .col-md-offset-1.col-md-5
           p 01. Broken Bones
           p 02. Corned Beef City
           p 03. Privateering
@@ -34,7 +34,7 @@
           p 09. Romeo And Juliet (With Nigel Hitchcock)
 
 
-        .col-xs-5
+        .col-md-5
           p 10. Sultans Of Swing (Standing Ovation)
           p 11. Haul Away
           p 12. Postcards From Paraguay
@@ -46,7 +46,7 @@
           
       
   .row.photos-album
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       .carousel.slide#my-carousel
         .carousel-inner
           .active.item
@@ -76,7 +76,7 @@
         = render partial:('pages/concerts/carousel')
    
   .row
-    .col-xs-12.text-center
+    .col-md-12.text-center
       naV
         ul.pagination.pagination-sm
           h6.text-primary Jump to other concerts
@@ -106,6 +106,6 @@
           /     span aria-hidden="true"  &raquo;
             br
               
-      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
 

@@ -1,28 +1,27 @@
 .container
   .row.review-title
-    .col-xs-offset-2.col-xs-2
+    .col-md-2.col-md-2.col-xs-0
       =image_tag("concerts/sion2015/sion15-2.jpg", title:"Sion", class:'circle-title ')
-    .col-xs-6
+    .col-md-6.col-xs-12
       h2.text-primary Sion, Sous les étoiles
       h4 17th July 2015
       
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p.text-bold Sion is gonna stay in my memorie for ever for diverse reasons:
       p My two wonderful Dutch and Swiss friends made me an incredible surprise ! Ingrid and me drove to Annemasse aerodrome where Man On A Track came and pick up us for a flight to Sion ! I was really impressed to fly in such a small plane Robin 3000 but I really felt safe MOAT is very careful. Ingrid has also piloted ! She was born to become a pilot she did it very well. We actually landed where the band landed but unfortunatenly we missed them.
       p We went to the hotel for a quick shower and then went straight to the venue. It seemed to be more organized than Saint Julien as there were lanes for Fans entrance, e-tickets entrance etc... Actually the security staff didn't know that we fans had early entries and it was a little mess to make them understand that we were supposed to come in first btw I won't detail all, as it got solved quickly.
       p So we could enter in the venue and kindely walk to the front row, Swiss audience is the most respectful audience of Europe I beleive, no one wants to steal your place, while your waiting you can go and come back easly. They make space so you can breath ! I had to visit the medical staff again, as my knee was hurting and I need to cover it for the night to make it safe. Medical staff was very cool and funny! Then I could get back easly to my front row, Swiss people behave. Also a little cool rain has refreshed us, it was sooooo appreciable.
       p Sonny Landreth was opening the act here too and it was much better than the day before! The sound wasn't to loud and I really could enjoy and had fun.
-      p
-        | Mark took the stage around 21:15, the show was very good, all the members were in top mood! The audience was less warm than Saint Julien's (well that's difficult to be warmer), but still very good and friendly.
-        | During Sultans Of Swing Mark had troubles and yelled something like "I'm done", he had sound trouble with his guitar and his amp but it was quickly solved. So this SOS is kinda collector because Mark played it longer and it was perfectly done.
-        | As expected  "Your Latst Trick" was also played again, this track is just magical !!
-        | This was my last gig of Tracker and I was about not to come I had planed it for the pre sales and finally decided to not make it and changed my mind again.... It was almost a last minute decision ! I don't regret at all
+
+      p Mark took the stage around 21:15, the show was very good, all the members were in top mood! The audience was less warm than Saint Julien's (well that's difficult to be warmer), but still very good and friendly.
+      p During Sultans Of Swing Mark had troubles and yelled something like "I'm done", he had sound trouble with his guitar and his amp but it was quickly solved. So this SOS is kinda collector because Mark played it longer and it was perfectly done.
+      p As expected  "Your Latst Trick" was also played again, this track is just magical !!
+      p This was my last gig of Tracker and I was about not to come I had planed it for the pre sales and finally decided to not make it and changed my mind again.... It was almost a last minute decision ! I don't regret at all
       
       .row.set-list
-        .col-xs-offset-2.col-xs-4
+        .col-md-offset-2.col-md-4
           p.underline Set list was the same as yesterday
-          br
           p 01. Broken Bones
           p 02. Corned Beef City
           p 03. Privateering
@@ -31,8 +30,7 @@
           p 06. Skydiver
           p 07. Romeo and Juliet
         
-        .col-xs-4
-          br
+        .col-md-4
           p 08. Sultans of Swing
           p 09. Your Latest Trick (She's Gone as intro)
           p 10. Postguards from Paraguay
@@ -43,12 +41,12 @@
           p 15. Going Home
           
   .row.review-body
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       p On our flight back to Annemasse I got lucky to pilote the Robin 3000! it was just incredible thanks Ingrid for letting me on the front thanks MOAT for showing me how to pilote :D
       p My last sentence would be to thank all the people involved of making this tour possible for me this year... Sharing room, car-pooling, Robin 3000 Plane, Xmas presents etc... I won't mention anybody but people will reconize themselves ;)
 
   .row.photos-album
-    .col-xs-offset-2.col-xs-8
+    .col-md-offset-2.col-md-8
       .carousel.slide#my-carousel
         .carousel-inner
           .active.item
@@ -92,7 +90,7 @@
         = render partial:('pages/concerts/carousel')
 
   .row
-    .col-xs-12.text-center
+    .col-md-12.text-center
       naV
         ul.pagination.pagination-sm
           h6.text-primary Jump to other concerts
@@ -122,7 +120,7 @@
           /     span aria-hidden="true"  &raquo;
             br
               
-      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+      = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
 
 
