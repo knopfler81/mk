@@ -1,0 +1,33 @@
+.row
+  .col-xs-12.text-center
+    naV
+      ul.pagination.pagination-sm
+        h6.text-primary Jump to other concerts
+        / li
+        /   a aria-label="Previous" href="#" 
+        /     span aria-hidden="true"  &laquo;
+        li
+          a href="sion"  Sion
+        li
+          a href="stjulien"  St Julien
+        li
+          a href="amsterdam"  Amsterdam
+        li
+          a href="antwerp"  Antwertp
+        li
+          a href="paris2"  Paris 2nd
+        li
+          a href="paris1"  Paris 1st
+        li
+          a href="london3"  London 3rd
+        li
+          a href="london2"  London 2nd
+        li
+          a href="london1"  London 1st
+        / li
+        /   a aria-label="Next" href="#" 
+        /     span aria-hidden="true"  &raquo;
+          br
+            
+    = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-primary', style:"margin-bottom: 20px"
+
