@@ -12,7 +12,9 @@
       = link_to page_path('concerts/tracker')do
         = image_tag("tours/tracker.jpg", class: "tours")  
         
-      = image_tag("tours/privateering.jpg", class: "tours")
+      = link_to page_path('concerts/privateering')do  
+        = image_tag("tours/privateering.jpg", class: "tours")
+        
       = image_tag("tours/bob.jpg", class: "tours")
       = image_tag("tours/getlucky.jpg", class: "tours")
       = image_tag("tours/ktgc.jpg", class: "tours")
