@@ -1,6 +1,5 @@
 
 .tour-title
-
   text-align            : center
   color                 : #114A74
 
@@ -26,13 +25,25 @@
   border-radius         : 50%
   width                 : 150px
 
-@media screen and (max-width: 800px)
+.concert-title, .concert-date
+  margin-left : 25px
+
+// @media screen and (max-width: 900px)
+
+@media screen and (max-width: 1000px)
   .circle-title
     display: none
+  .concert-title
+    text-align: center
+
+  .concert-date
+    text-align: center
+
+
 
 .review-title
   margin-top         : 20px
-  margin-left        : 30px 
+  margin-left        : 30px
 
 .review-body
   margin-top         : 20px
@@ -52,8 +63,10 @@
   font-weight: bold
 
 .photos-album
+
   margin-bottom      : 30px
   margin-top         : 30px
+
 
 #my-caroussel
   width              : 20px
