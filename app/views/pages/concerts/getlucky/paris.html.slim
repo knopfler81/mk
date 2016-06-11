@@ -4,9 +4,13 @@
       .row.review-title
         .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
           =image_tag("concerts/2010/paris2010/paris10-0.jpg", title:"London", class:'circle-title')
-        .col-md-6.col-xs-12
+        .col-md-8.col-xs-12
           h2.text-primary.concert-title Paris Bercy
           h4.concert-date 9th June 2010
+          - start_time =  "2010-06-09 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
           
       .row.review-body
         .col-md-offset-1.col-md-10         
