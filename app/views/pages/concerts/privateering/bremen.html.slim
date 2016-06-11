@@ -1,0 +1,97 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2013/bremen2013/Bremen13-0.jpg", title:"Berlinc", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title Bremen
+          h4.concert-date 11th May 2013
+          h4.concert-date  A speedway to Bremen ! You will understand!
+          
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p Igrid and I had a nice cheese breakfast on a terrace in Berlin. It was sunny and pretty warm! We really enjoyed it ! We decided to open the 308CC roof for our speedway to Bremen... 300 meters further the police stopped us for 53km/h... *sigh* we didn’t see the 30 sign... Anyway...speed limits are indeed in town and thank God not everywhere on the highway. In Germany, when you reach 210km/h you really feel *FREEDOM* Ingrid is a great driver and really careful!
+          p We arrived at around 3:30pm in Bremen. We had a very nice hotel room that we shared with Maarten.
+          p The venue was 2km or so from the venue, so we walked there, stopping in a Bavarian restaurant with traditional music, traditionally dressed waiters and traditional food which was YUMMY ! I found out that a Bavarian Pizza is actually a flammekueche !
+          p It was raining cats and dogs when we left for the venue, so we ran until there when we met Martina who was waiting for us for a little while! We received some working passes and stood in the main entrance for some flyering. I’m still not really sure what this flyer really was for it was all written in German! But It was for some pictures of the Privateering concert. It was pretty funny because no one could guess that I was French and not a speaker of German... So each time I was asked « Was its das»... «Sorry I don’t speak German was the reply».
+          p Then came show time...We had 6th row seats, pretty far but actually the sound was very good. The concert was brilliant and MK was at his best! Good mood again happy to play in this small venue! We had great a surprise again with I Dug Up A Diamond... It’s not that bad to be a little further back because then you see the stage differently ! Lights, guys, etc...
+          p Only one thing was bothering Ingrid and me... It’s a MUST to rush to the stage for Telegraph Road !! I did something I would never have dared to do if i wasn’t with Ingrid that evening... When TR started we left our seats and went to the ladies yes we did !!... It took us maybe 3 minutes and so like smart and polite girls we waited next to the audience doors so as not to disturb our seat neighbours... Security was watching us closely... When TR ended, we indeed rushed to the stage, Ingrid managed to avoid the security lady who actually caught me because of missing Ingrid...ARG !!...I don’t know how I managed to escape from this big lady !! But we had our very front row for the encores ! And this is the best feeling ever! The closeness with the man and his band !
+          p I was surprised and little disappointed not to hear BIA... ah well...
+          p After this wonderful show, we met up again with Isaac, Jeroen, Maarten, and Ingrid for a last drink and walked back to our hotel saying goodbye until the next show, which is Brighton for me !!
+
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2013/bremen2013/Bremen13-1.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-2.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-3.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-4.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-5.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-6.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-7.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-8.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-9.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-10.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-11.JPG")
+              .item
+                =image_tag("concerts/2013/bremen2013/Bremen13-12.JPG")
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="berlin"  Berlin
+                li.active
+                  a href="bremen" Bremen
+                li
+                  a href="brighton"  Brighton
+                li
+                  a href="london2"  London2nd
+                li
+                  a href="london1"  London1st
+                li
+                  a href="paris"  Paris
+                li
+                  a href="clermont"  Clermont 
+                li
+                  a href="dijon"  Dijon
+                li
+                  a href="nimes"  Nîmes
+                li
+                  a href="zurich"  Zurich
+                li
+                  a href="stjulien"  St Julien
+                li
+                  a href="Carcassonne" Carsassonne
+                / li
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/privateering/side_bar'

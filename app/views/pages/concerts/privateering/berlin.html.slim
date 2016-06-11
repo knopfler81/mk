@@ -1,0 +1,94 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2013/berlin2013/Berlin13-0.jpg", title:"Berlinc", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title Berlin O2 Arena
+          h4.concert-date 10th May 2013
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p D-Day Finally arrived, almost unspoilt! I had to mask all my MK friends from my facebook and avoided forums etc…. I felt so “alone” for a couple of weeks.
+          p I arrived in the middle of the the afternoon in Berlin, I left home at 7am though… journey was pretty long…btw I had a good reason !
+          p I first met Ingrid at Plus Hotel-Hostel, which was pretty close to the O2 Arena, and just next to the rest of the Berlin wall. Although I recommend this Hotel, it’s pretty cheap, clean, and comfortable. We went to have a late lunch with Maarten and Martina, Jeroen, Isaac and Martina joined us for a drink . Afterwards we went to the venue.
+
+          p A big venue 15 000 seats I guess( like The POPBercy)… We were in the front row but on the very left.
+          p Do you know the feeling when “feelin’ so good”starts ??? Heart starts beating fast, shivers everywhere and then a big man arrives on stage with the union jack jacket ! Yeahh PC comes and introducesHere MK every night !
+          p And then all the guys come around and the show starts !!! WII for an opener is indeed a good song but not as surprising as Border River was! But I like it anyway ! And then many surprises in a row ! On this tour you get more surprises every night I guess !        
+
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2013/berlin2013/Berlin13-1.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-2.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-3.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-4.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-5.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-6.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-7.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-8.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-9.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-10.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-11.JPG")
+              .item
+                =image_tag("concerts/2013/berlin2013/Berlin13-12.JPG")
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li.active
+                  a href="berlin"  Berlin
+                li
+                  a href="bremen" Bremen
+                li
+                  a href="brighton"  Brighton
+                li
+                  a href="london2"  London2nd
+                li
+                  a href="london1"  London1st
+                li
+                  a href="paris"  Paris
+                li
+                  a href="clermont"  Clermont 
+                li
+                  a href="dijon"  Dijon
+                li
+                  a href="nimes"  Nîmes
+                li
+                  a href="zurich"  Zurich
+                li
+                  a href="stjulien"  St Julien
+                li
+                  a href="Carcassonne" Carsassonne
+                / li
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/privateering/side_bar'

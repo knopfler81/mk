@@ -1,0 +1,92 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2013/saintjulien2013/stjulien13-0.jpg", title:"Saint Julien", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title Saint Julien En Genevois
+          h4.concert-date  22th July 2013
+    
+      .row.review-body
+        .col-md-offset-1.col-md-10
+         p Another unplanned gig that I got lucky to attend ! I drove to the Guitares en Scène Festival and picked up Laurent at the train station! We first stopped and dropped our luggage at the hotel and then went straight to the venue. The queueing organisation was mmmm a giant mess ! We were supposed to have early entry but they opened the gate pretty late... People were rushing everywhere, nothing was clearly explained, and indeed some angry people were moaning and yelling ! I really can’t stand this, please breath deep and behave !! There’s always a solution ! After all that mess we finally found out where to pick up our pre sale tickets. For members of mk.com presales fans were given a yellow bracelet and guess what? I wasn’t on the list, a misunderstood which finally got solved ! I was given a ticket but I couldn't enter with the «fans» in the «waiting area»... I tried to explain to the security guys but they didn't want to let me go as they had setpoints... «rrrr».
+         p I got lucky to find someone of MK’s crew, to whom I explained my problem, he was really kind and understood the situation. He told me «Okay follow me...». So I did... I was the very first person to enter into the venue ( hummm under the tent). A couple of minutes later «the fans» were allowed to come in, and then I found all my fellow fans ! We all sat down to keep the maximum of space, because we still had some time to wait and it was already very warm. Isaac was so kind to bring us some fresh bottles of water, but a little water fight started between us.  Thirty minutes after the fans entrance, the rest of the audience rushed under the warmish tent! And then it became even warmer ! We stayed seated on the floor to rest a maximum of time. Bap Kennedy was the opener again of this french gig ! I really like him and I was really happy that the audience in St Julien paid more attention to his music than they did in Nîmes! Bap and his guitarist were really good ! There were big screens beside the stage, I think it’s really good for people who are further in the audience to see what’s happening on stage !  Thirty minutes later the main guest of the festival arrived on stage with his wonderful band! The audience was electric, I’ve never heard on this tour such an enthusiastic atmosphere! I don’t know how to explain what happened there, at the very first song everyone was on fire there, and the band really played the game! (They always do but TONIGHT?? Woooaw).
+         p Song after song it was getting warmer in each and way ! We were so excited and hot than we had a little water fight with Ingrid, I think we left a song for a couple of seconds to fight with splashing on each other....but it was very welcome !!  The concert was «too short» well when you’re having a good time it’s always too short, and I’m NOT complaining about the duration! I wish that it could never end !! But every good thing must come to an end and it was time to say good bye to all the musicians! We really love them because they are reactive to the waving, they wave back etc! I even had a kiss blown back at me from MK ! AH !  Oh also another bottle of water was dropped on me, so a new water fight started and this time we were really soaked !! Thank you sister !
+         p The Festival took place in a sports complex and it was really well organised ( inside, not at all at the entry ). I stayed with a couple of fans for a few drinks and we were even given a little food . We discussed the performance which was, so far, the best ! We all agreed it was this one ! What a wonderful time we had !
+
+ 
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-1.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-2.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-3.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-4.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-5.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-6.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-7.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-8.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-9.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-10.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-11.jpg")
+              .item
+                =image_tag("concerts/2013/saintjulien2013/stjulien13-12.jpg")
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="berlin"  Berlin
+                li
+                  a href="bremen" Bremen
+                li
+                  a href="brighton"  Brighton
+                li
+                  a href="london2"  London2nd
+                li
+                  a href="london1"  London1st
+                li
+                  a href="paris"  Paris
+                li
+                  a href="clermont" Clermont
+                li
+                  a href="dijon"  Dijon
+                li
+                  a href="nimes"  Nîmes
+                li
+                  a href="zurich"  Zurich
+                li.active
+                  a href="stjulien"  St Julien
+                li
+                  a href="Carcassonne" Carsassonne
+                / li
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/privateering/side_bar'
