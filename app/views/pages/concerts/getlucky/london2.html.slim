@@ -1,0 +1,77 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2010/london2010-2/london10-2-0.jpg", title:"London", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title London Royal Albert Hall
+          h4.concert-date 31st May 2010
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p Checkout the 30th May page for the full review of the 2 nights in London
+          
+          
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2010/london2010-2/london10-2-1.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-2.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-3.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-4.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-5.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-6.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-7.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-8.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-9.jpg")
+              .item
+                =image_tag("concerts/2010/london2010-2/london10-2-10.jpg")
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="london1" London 1sr
+                li.active
+                  a href="london2" London 2nd
+                li
+                  a href="paris"  Paris
+                li
+                  a href="amsterdam2"  Amsterdam 2nd
+                li
+                  a href="amsterdam1"  Amsterdam 1st
+                li
+                  a href="lyon"   Lyon
+                li
+                  a href="nimes"  Nîmes
+              
+    
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/getlucky/side_bar'

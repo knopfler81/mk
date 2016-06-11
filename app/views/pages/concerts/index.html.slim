@@ -17,9 +17,10 @@
         
       = link_to page_path('concerts/bob/paris') do
         = image_tag("tours/bob.jpg", class: "tours")
-      
-      = image_tag("tours/getlucky.jpg", class: "tours")
-      
+        
+      = link_to page_path('concerts/getlucky') do
+        = image_tag("tours/getlucky.jpg", class: "tours")
+        
       = image_tag("tours/ktgc.jpg", class: "tours")
       
       = image_tag("tours/alltheroad.jpg", class: "tours")
@@ -30,4 +31,3 @@
       
       = image_tag("tours/goldenheart.jpg", class: "tours")
     
-  

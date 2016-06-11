@@ -1,0 +1,90 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2010/paris2010/paris10-0.jpg", title:"London", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title Paris Bercy
+          h4.concert-date 9th June 2010
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10         
+          p Mark Knopfler played that night in Paris Bercy, which is a huge venue 12 000 seats! I guess it was sold out!
+          p I arrived in Paris by train around 3:00pm, checked in my hotel, had a quick snack, a little nap, a shower and then I went straight to the big venue (under the rain)!
+          p I met Isaac again, Jean Yves, and few people from the french association AFMK.
+          p We had to waited  in a line-up to pick up our pre-ordered tix at gate 35, it was pretty long and badly organized... And then we had to go to another gate to enter in the venue.
+          p Once again I got lucky with a very front row in the middle, thanks to my friend J-Y who purshased my tix ( I couldn’t have done it when the pre-orders strated as I was at work with out internet access, oh well so slow ... and not allowed during the calls).
+          p MK started the set list with that wonderful opener Border Reiver ! He was in very good mood, quite talkative and happy to be in Paris ! He still plays sitted but as I said in my London review it doesn’t affect his playing. He confirmed us that his back is better and that he wanna keep the sitted position because he likes it !
+          p I was very excited during the  concert so happy to see those men on stage again ! They’re all so wonderful musicians!
+          p I also would like to share here on of my strongest moment in the concert.
+          p It was when I heard the very first notes of A Night In Summer Long Ago. So tears simply arrived, impossible to control myself, they were here and ran during the whole song... It was because of one of my best memories with my grand mother "Juliette". She really loved MK since I've attended my very first show in Lyon Fourvière 1996 (I was 15, and was always mentioning MK/DS music's )... And then she used to ask me very often : " Nelly, please I want to listen to the guy you saw in Lyon !! " And THAT song was really her favorite. She didn't know any english, so that weren't the lyrics... She just loved the music, I still can see the smile she had on her face while listening... She passed away a year after... And this song as now a meaning for me...
+          p BTW when the song ended I was still in tears, then they played Marbletwon and tears were still here...it was hard to come back to reality!
+          p And here came the troubles (not serious but stressing lol). People were very hot in Paris and instead of standing up at the end of TR they stood up at the end of Marbletown, I wasn’t prepared at all... So I stood up quickly took my lithographies my bag with me and ran straight to the front, (few elbows chocs) and noticed that I only took one of the litho.... so I got back to my seat, picked up the litho and go back to the front... and there again I ‘ve noticed that I’ve lost my camera! So I got back to my seat again and tried to find it back... impossible I was madd. So I got back to the front (well with 3 or 4 tall guys in front of me...grrr). Later Isacc saved my life with finding my camera back ! And as a gentleman at the end of Telegraph Road he proposed me to switch off places then I was closer to the stage again! (Thank you very much Isaac)!
+          p During the encore a 6 years old little girl gave a drawing to Matt Rolling for Mark ! I was very cute and I guess that Mark appreciated it because at the end of the concert  Mark asked Danny for his sticks and gave them to the little girl !! That was very cute ! ( Next time I’ll deguise myself as a little girl... lol).
+          p That was a wonderful concert of course ! This is the one I could never forget because of ANISLA.
+        
+              
+          
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2010/paris2010-1/paris10-1.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-2.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-3.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-4.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-5.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-6.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-7.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-8.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-9.jpg")
+              .item
+                =image_tag("concerts/2010/paris2010-1/paris10-10.jpg")
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="london1" London 1sr
+                li.active
+                  a href="london2" London 2nd
+                li
+                  a href="paris"  Paris
+                li
+                  a href="amsterdam2"  Amsterdam 2nd
+                li
+                  a href="amsterdam1"  Amsterdam 1st
+                li
+                  a href="lyon"   Lyon
+                li
+                  a href="nimes"  Nîmes
+              
+    
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/getlucky/side_bar'

@@ -1,0 +1,81 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2010/amsterdam2010-2/adam10-2-0.jpg", title:"Amsterdam", class:'circle-title')
+        .col-md-6.col-xs-12
+          h2.text-primary.concert-title Amsterdam Heinenken Music Hall 2nd Night
+          h4.concert-date 29th June 2010
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10         
+          
+          p Another great morning and early afternoon with everybody having breakfast meal and drinks.
+          p Gig was fantastic I’ll never stop saying that... I was standing on the left side this time and my eyes were finally delighted !! No table ! And a very good view on MK’s beautiful hands !
+          p Perfect sound again maybe not loud enought for some track but it’s just my opinion... (I’m a bit death). Perfect MK perfect Band !! Amazing men !! And lovely fans indeed!!
+
+            
+            
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-1.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-2.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-3.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-4.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-5.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-6.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-7.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-8.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-9.JPG")
+              .item
+                =image_tag("concerts/2010/amsterdam2010-2/adam10-2-10.JPG")
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="london1" London 1sr
+                li.active
+                  a href="london2" London 2nd
+                li
+                  a href="paris"  Paris
+                li
+                  a href="amsterdam2"  Amsterdam 2nd
+                li
+                  a href="amsterdam1"  Amsterdam 1st
+                li
+                  a href="lyon"   Lyon
+                li
+                  a href="nimes"  Nîmes
+              
+    
+                /   a aria-label="Next" href="#" 
+                /     span aria-hidden="true"  &raquo;
+                  br
+                    
+            = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/getlucky/side_bar'
