@@ -1,0 +1,34 @@
+.container
+  .row
+    .col-md-12
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("tours/goldenheart.jpg", title:"Lyon", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Lyon, Fourviere's arena
+          h4.concert-date 9th July 1996
+          - start_time =  "1996-07-09 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+      br 
+
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p I have loved Dire Straits since an early age, and so have my parents and my brother. I can still see myself with that BIA tape in my hands saying... Mummy when I grow up, I'll go at a Dire Straits Concert
+          p In fact i didn't know the name of that great guitarist, that I loved so much until one day i was listening the radio and they spoke about Mark Knopfler: "the voice and the guitar of Dire Straits is now on tour with a new a solo album Golden heart" So I immediately said to my parents that I wanted to see Mark Knopfler, "Please, please, please, I will be a good girl "and stuff I promised... They finally accepted
+          p On the 9th July 1996: I was 15! I stood in the Lyon's Arenas, waiting for the best guitarist in the world (to me). We were sitting in the middle of the arenas, and while waiting for Mark a game began ... Everybody was making paper planes with the magazines' pages they gave at the entrance. Everybody cheered when a plane landed on the stage. But a bad incident happened, a guy not very far from us was holding a gun.... well he was arrested before the worst happened. That might be the reason why Mark delayed the show.
+          p I really wanted to go at the front of the stage. My parents weren't keen to let me go alone but they finally accepted. That was wonderful for my eyes and my ears to be so close to the Voice and the guitar of Dire Straits!!! It was my first concert, thank you Mark for that wonderful moment. (I am still looking for the recording so...if you know something let me know).
+           
+          
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/1996/lyon1996/lyon96-1.jpg")
+              .item
+                =image_tag("concerts/1996/lyon1996/lyon96-2.jpg")
+                                 
+                
+            = render partial:('pages/concerts/carousel')
