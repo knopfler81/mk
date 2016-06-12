@@ -1,0 +1,77 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2005/milan2005/milan05-0.jpg", title:"Milan", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Milan Fila Forum
+          h4.concert-date 10th May 2005
+          - start_time =  "2005-05-10 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+    
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p I met Thomas my msn Austrian friend’s. It was hard to find each other with all the people waiting in front of the Forum. It was the 1st time we met!
+          p A really powerful audience, with very noisy Italian fans (they talk a lot)! Also a powerful Mark Knopfler! This evening was wonderful because Mark played Telegraph Road with his brand new Pensa guitar (that he got the same day). What a sound, what a beautiful instrument!
+          p Unfortunately the concert was very short compared to the others; they stopped playing after So far away.... a very short concert... 'sigh' The guys might have had to catch a plane...
+          p Anyway the evening ended well in a nice restaurant with Thomas! And the day after we had breakfast together and had lot of fun because of a little red car which couldn't manage to park for a while.... ( uhh ? Thomas?)
+
+
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2005/milan2005/milan05-1.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-2.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-3.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-4.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-5.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-6.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-7.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-8.jpg")
+              .item
+                =image_tag("concerts/2005/milan2005/milan05-9.jpg")
+
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="lyon"  Lyon
+                  
+                li
+                  a href="paris"  Paris
+                  
+                li
+                  a href="milan"  Milan
+                  
+                li.active
+                  a href="london"  London
+                
+
+                  br
+                    
+            = link_to 'Back to Shangri La Tour', page_path('concerts/shangrila'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/shangrila/side_bar'

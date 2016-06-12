@@ -1,0 +1,50 @@
+.tours-content
+  .row
+    .tour-title
+      h1.text-primary Kill To Get Crimson tour 2008
+    
+      p click on images for concerts review
+      
+    
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/london2') do
+          =image_tag("concerts/2008/london2008-2/london08-2-0.jpg", title:"London", class:'circle ')
+          h6 London 2nd
+          br
+              
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/london1') do
+          =image_tag("concerts/2008/london2008-1/london08-1-0.jpg", title:"London", class:'circle ')
+          h6 London 1st 
+          br
+              
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/paris') do
+          =image_tag("concerts/2008/paris2008/paris08-0.jpg", title:"Paris", class:'circle ')
+          h6 Paris
+          br  
+              
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/rotterdam') do
+          =image_tag("concerts/2008/rotterdam2008/rotterdam08-0.jpg", title:"Rotterdam", class:'circle ')
+          h6 Rotterdam
+          br           
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/amsterdam2') do
+          =image_tag("concerts/2008/amsterdam2008-2/adam08-2-0.jpg", title:"Amsterdam", class:'circle ')
+          h6 Amsterdam 2nd
+          br
+      
+      .col-xs-6.col-sm-3.col-md-3.col-lg-3.ktgc-tour
+        = link_to page_path('concerts/ktgc/amsterdam1') do
+          =image_tag("concerts/2008/amsterdam2008-1/adam08-1-0.jpg", title:"Amsterdam", class:'circle ')
+          h6 Amsterdam 1st
+
+          
+  = render partial:('pages/concerts/bottom_bar')      
+          
+
+        
+      
+          
+        

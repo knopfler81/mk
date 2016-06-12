@@ -1,8 +1,32 @@
 
+// Tour pages
+.circle
+  border-radius         : 50%
+  width                 : 150px
+  &:hover
+    box-shadow          : 0 2px 10px 0 rgba(0,0,0,.76)
+
+.tours-covers
+  width                 : 300px
+
+// Concert header title and circle pic
 .tour-title
   text-align            : center
   color                 : #114A74
 
+.time-ago
+  font-style             : italic
+  color                  : #337cbb
+  margin-left            : 35px
+
+.concert-date
+  margin-left            : 35px
+
+.concert-title
+  margin-left            : 35px
+
+.text-bold
+  font-weight            : bold
 
 .tours-content
   margin-left           : 5%
@@ -10,52 +34,9 @@
   margin-top            : 1%
   margin-bottom         : 10%
 
-.tours
-  padding               : 0px
-  margin-top            : 1px
-  margin-right          : 1px
-  width                 : 200px
-
-.circle
-  border-radius         : 50%
-  width                 : 150px
-  &:hover
-    box-shadow          : 0 2px 10px 0 rgba(0,0,0,.76)
-
 .circle-title
   border-radius         : 50%
   width                 : 150px
-
-.concert-title, .concert-date
-  margin-left            : 35px
-
-.menu-right
-  margin-top             :  140px
-  border-left            :  3px solid #337cbb
-
-.image-side
-  text-align: center
-  width: 140px
-
-.circle-menu
-  border-radius          : 50%
-  width                  : 80px
-  -webkit-filter         : grayscale(100%)
-  &:hover
-    width                : 90px
-    border               : 6px solid #337cbb
-    -webkit-transition   :  .3s
-    -webkit-filter       : none
-
-
-.side-concert
-  margin-top             : 2px
-  color                  : gray
-
-.side-title
-  color                  : #337cbb
-  margin-left            : 20px
-  margin-bottom          : 20px
 
 .review-title
   margin-top             : 20px
@@ -72,28 +53,64 @@
   margin-top             : 30px
   margin-bottom          : 30px
 
+// menu with circles on the right
 
-.underline
-  text-decoration        : underline
+.image-side
+  text-align              : center
+  width                   : 140px
 
-.text-bold
-  font-weight            : bold
+.menu-right
+  margin-top             :  140px
+  border-left            :  3px solid #337cbb
 
-.time-ago
-  font-style             : italic
+.circle-menu
+  border-radius          : 50%
+  width                  : 80px
+  -webkit-filter         : grayscale(100%)
+  &:hover
+    width                : 90px
+    border               : 6px solid #337cbb
+    -webkit-transition   : .3s
+    -webkit-filter       : none
+
+.side-concert
+  margin-top             : 2px
+  color                  : gray
+
+.side-title
   color                  : #337cbb
-  margin-left            : 35px 
+  margin-left            : 20px
+  margin-bottom          : 20px
 
+// bottom page menu
+
+.cover-menu
+  width                  : 80px
+  margin-bottom          : 20px
+  &:hover
+    box-shadow          : 0 2px 10px 0 rgba(0,0,0,.76)
+
+
+// Special display according to used media
 
 @media screen and (max-width: 990px)
+
+  .tours-covers
+    width                 : 150px
+    
   .circle-title, .circle-menu, .side-concert, .side-title
-    display               : none
+    display              : none
 
   .concert-title
-    text-align             : center
+    text-align           : center
 
   .concert-date
-    text-align             : center
+    text-align           : center
   .time-ago
-    text-align             : center
+    text-align           : center
 
+  .cover-menu
+    width                  : 50px
+    margin-bottom          : 20px
+    &:hover
+      box-shadow          : 0 2px 10px 0 rgba(0,0,0,.76)

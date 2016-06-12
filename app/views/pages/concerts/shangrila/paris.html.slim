@@ -1,0 +1,77 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2005/paris2005/paris05-0.jpg", title:"Paris", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Paris Bercy
+          h4.concert-date 19th April 2005
+          - start_time =  "2005-04-19 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+    
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          p I got up at 6:30 am for the Saint Etienne  Paris train's to See Mister Mark Knopfler.
+          p I Arrived very early at Bercy... i waited during 7 or 8 hours met some nice other fans, spoke a bit with...
+          p Mark was really really awesome that evening, he was in a really good shape. We had a wonderful olé olé ! Too much fun !!
+          p For the first time in my life I dared to yell at Mark  " Mark you are the best I love you"... the most surprising was that he replied to me :
+          p "I love you too"... woow
+          p That was an unforgettable gig, maybe the best that i have seen  so far !!
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2005/paris2005/paris05-1.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-2.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-3.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-4.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-5.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-6.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-7.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-8.jpg")
+              .item
+                =image_tag("concerts/2005/paris2005/paris05-9.jpg")
+
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="lyon"  Lyon
+                  
+                li.active
+                  a href="paris"  Paris
+                  
+                li
+                  a href="milan"  Milan
+                  
+                li
+                  a href="london"  London
+                
+
+                  br
+                    
+            = link_to 'Back to Shangri La Tour', page_path('concerts/shangrila'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/shangrila/side_bar'

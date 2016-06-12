@@ -1,0 +1,38 @@
+.container
+  .row
+    .col-md-12
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2006/paris2006/paris06-0.jpg", title:"paris", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Paris Zenith
+          h4.concert-date 12th June 2006
+          - start_time =  "2006-06-12 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10         
+          p ...this date sounded pretty bad for personal reasons and I wasn't in my top form to attend this gig. But finally... Sometime you learn that music can make you feel better, change your mind, and definaltly I got blowed up! The duet was magical (even if I rather prefer MK alone on stages).
+
+          
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2006/paris2006/paris06-1.jpg")
+              .item
+                =image_tag("concerts/2006/paris2006/paris06-2.jpg")
+              .item
+                =image_tag("concerts/2006/paris2006/paris06-3.jpg")
+
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+

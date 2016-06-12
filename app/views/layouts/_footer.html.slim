@@ -6,6 +6,12 @@ footer.section.section-primary
           | © &nbsp;
           = Date.today.year 
           | &nbsp; Nelly Duclos
+          .row
+            .col-xs-12
+            - start_time =  "2016-06-11 22:48:00 +0100"
+            - end_time   =  Time.now
+            - date = distance_of_time_in_words(start_time, end_time).to_s
+            small Last update #{date} ago
 
       .col-xs-4.text-center
         = link_to new_contact_path(@contact) do

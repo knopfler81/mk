@@ -1,0 +1,78 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2008/rotterdam2008/rotterdam08-0.jpg", title:"Rotterdam", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Rotterdam
+          h4.concert-date 31st March 2008
+          - start_time =  "2008-03-31 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+    
+      .row.review-body
+        .col-md-offset-1.col-md-10
+          P My last night in Holland was even better than the two previous one, it seems that they get better and better every night. That night the concert was seated, I have been VERY lucky to have a front row again, but this time on the left... 
+          P Maybe the best place, because there is John McCusker and Mark seems to enjoy playing with him a lot and always smiles to him! Very pleasant to watch. The security was very strict. Two men were seated back to the stage looking at us... 
+          P When Speedway At Nazareth ended they left, and we immediately ran to the gate! That was great I was so close to Mark, see the pics ( I'm very happy with their quality). It's hard for me to explain my feelings, not enough words to say how much I was happy with this trip to Holland with my good friends !Too bad that you are so far away from me.I'll never forget this great time with you all , Mark and the band ! (And Ingrid's hospitality of course).
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-1.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-2.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-3.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-4.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-5.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-6.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-7.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-8.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-9.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-10.jpg")
+              .item
+                =image_tag("concerts/2008/rotterdam2008/rotterdam08-11.jpg")
+
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other concerts
+                / li
+                /   a aria-label="Previous" href="#" 
+                /     span aria-hidden="true"  &laquo;
+                li
+                  a href="amsterdam1"  Amsterdam
+                li
+                  a href="amsterdam2"  Amsterdam
+                li.active
+                  a href="rotterdam"  Rotterdam  
+                li@
+                  a href="paris"  Paris
+                li
+                  a href="london2"  London2nd
+                li
+                  a href="london1"  London1st
+
+                  br
+                    
+            = link_to 'Back to Kill To Get Crimson Tour', page_path('concerts/ktgc'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/concerts/ktgc/side_bar'
