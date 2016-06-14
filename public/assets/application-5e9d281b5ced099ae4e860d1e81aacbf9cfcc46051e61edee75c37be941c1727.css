@@ -23,6 +23,11 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+/* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.small-cal {
+  width: 90px;
+}
 /* line 3, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/concerts.sass */
 .circle {
   border-radius: 50%;
@@ -9407,4 +9412,9 @@ button.close {
 .calendar-presentation {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+/* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.small-cal {
+  width: 90px;
 }
