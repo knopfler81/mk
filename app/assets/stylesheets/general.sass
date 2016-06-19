@@ -1,3 +1,6 @@
+html, body
+  height: 100%
+
 .navbar
   background-color      : #337cbb
   border-radius         : 0px !important
@@ -23,8 +26,12 @@
   color                 : #64A6DD
   margin-top            : 5px
 
-.footer
-  position : absolute
+.under-section
+  margin-bottom         : 20px
+
+.footer-style
+  height                : 30px
+  background-color      : #337cbb
 
 .footer-text, a
   color                : #ffffff
@@ -51,14 +58,18 @@
   color                 : #ffffff
   font-size             : 100px
 
+@media screen and (max-width: 720px)
+  .section-title
+    color                 : #64A6DD
+    margin-top            : 5px
+    font-size             :  20x
 
-// @media screen and (max-width: 720px)
-//   .category
-//     width                 : 90%
-//
-//
-// @media screen and (max-width: 990px)
-//
-//   .category
-//     width                 : 100%
-    margin-top            : 30px
+@media screen and (max-width: 990px)
+  .section-title
+    color                 : #64A6DD
+    margin-top            : 5px
+    font-size             :  25px
+
+
+
+

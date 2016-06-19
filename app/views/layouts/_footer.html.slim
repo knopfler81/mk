@@ -3,12 +3,13 @@ footer.section.section-primary
     .row.text-center
       .col-xs-4.text-center
         small 
-          | © &nbsp;
+          |© 
+          span<>
           = Date.today.year 
-          | &nbsp; Nelly Duclos
+          span<> Nelly Duclos
           .row
             .col-xs-12
-            - start_time =  "2016-06-12 16:00:00 +0100"
+            - start_time =  "2016-06-19 22:30:00 +0100"
             - end_time   =  Time.now
             - date = distance_of_time_in_words(start_time, end_time).to_s
             small Last update #{date} ago
@@ -16,11 +17,13 @@ footer.section.section-primary
       .col-xs-4.text-center
         = link_to new_contact_path(@contact) do
           i.fa.fa-bug.fa-fw.text-inverse
-          small.footer-text&nbsp; Report a bug or typos
+          small.footer-text
+            span<> Report a bug or typos
 
       .col-xs-4.text-center
         = link_to new_contact_path(@contact) do
           i.fa.fa-envelope-o.fa-fw.hub.text-inverse
-          small.footer-text&nbsp; Contact me
+          small.footer-text
+            span<> Contact me
+              
             
-          

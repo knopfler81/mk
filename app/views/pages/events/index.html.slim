@@ -1,0 +1,42 @@
+.container.event-page
+
+    .row
+      .col-xs-offset-1.col-xs-10
+        h1.text-primary  Other events with Mark 
+        p I got really lucky a couple of times to attend special events with Mark, and EVEN meeting him !!
+    br
+    br
+
+    .row
+    
+      .col-xs-offset-1.col-xs-10
+        
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/legrandjournal')do
+            = image_tag("events/legrandjournal2015/legrandjournal2015-1.jpg", class:"event-preview")
+          h5.text-center  Le Grand Journal 2015
+            
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/meetingparis2008')do
+            = image_tag("events/meetingparis2008/meetingparis2008-1.jpg", class:"event-preview")  
+          h5.text-center Meet & Greet Paris 2008
+            
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/hayonwye2007/')do
+            = image_tag("events/hayonwye2007/hayonwye2007-1.jpg", class:"event-preview")  
+          h5.text-center Hay On Wye 2007
+      
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/lemans2006')do
+            = image_tag("events/lemans2006/lemans2006-1.jpg", class:"event-preview")  
+          h5.text-center Le Mans 2006
+
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/rtl2_2004')do
+            = image_tag("events/rtl2_2004/rtl2_2004-1.jpg", class:"event-preview")
+          h5.text-center RTL2 2004
+            
+        .col-xs-6.col-sm-4.col-md-4.col-lg-4
+          = link_to page_path('events/lemans2004')do
+            = image_tag("events/lemans2004/lemans2004-1.jpg", class:"event-preview")
+          h5.text-center Le Mans 2004

@@ -1,0 +1,123 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("events/legrandjournal2015/legrandjournal2015-0.jpg", title:"M&G2008", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title  Le Grand Journal 2015 (Canal +)
+          h4.concert-date  25th March 2015
+          - start_time =  "2015-03-25 16:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago  Couldn't meet him directly this time, but a rare event, #{date} ago 
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10  
+        
+          p First of all, a couple of us made a naughty little joke, "MK wasn't there , the broadcast is postponded to Monday; we dont know why...., we are So dispointed blabla" I'll explain how it happened :) 
+
+          p We were asked to arrive at 16:00 at the venue, it was very long till the "tv show starts" . There were tones of teenagers on " school trip", they didn't know who they were about to see... LOL 
+          p We had to sign paper for the image rights... We were taken our passports... We also had to leave our bags and jackets to a dressing room, one by one and were given a little paper with a number on it you know like in theatre or disco lol. 
+          p We waited a long time in a "waiting room" (almost one hour)... Then we arrived on the set and were asked to sit to determintated places... I asked to be nearer to the stage they didn't want lol... 
+          p When we were all seated the room driver came to explain us all the progress of broadcast, he explained that on the first part we'll have fun with music and then we would talk about the terrible crash and politics... 
+          p It's funny to see how it really "works" on a tv show... 
+          p We had a break between MK's part and the Politic part... we were offred sodas and cake :) 
+
+
+          p We all thought that MK's broadcast would be aired on the same day after the live tv show with politics & co... Just before broadcasting, we were told that MK's part would be aired on the next Monday. ( We had no way to comunicate as all our mobile pone were prohibited in the audience.... They were using detector on us before...). So we though about our french friends who were all ready and waiting with the recorders for MK in their sofa. We imagined them thinking that we went there for nothing so we played the game of the naughty joke, till this morning... Well enough said about this... 
+          p MK was there indeed and in very good shape ! :) he was with Guy, Ianto, Dave Bronze, Robbie McIntosh !( Paul Crockford and Glen Stagger too). 
+          p Well about MK's interview, in the audience it was very hard to hear really.... Sound was low.... And the french translation covered MK's voice so it was a little messy with the two voices at the same time.... 
+          p So the things I could understand... are almost here... 
+          p At the same time a french actress was interviewed (Lea Seydoux)... She's gonna be the next "James Bond Girl". 
+          p Antoine De Caunne (the presenter) asked MK " Would you, if you were asked, write the Next James Bond Soundtrack..." Of course the answer didn't surprised me.... He said, no, movie music is not his "stuff" (well he did some pretty good before didnt he?? uhh??) 
+          p He also talked about is guitar skills, his way to hold the neck of the guitar like a plumber hold a pipe... (lol He always say this one...) He said that he is an selft-educated guitar player.... and his band are REAL Musicians.... You know MK's always so humble on his skills... They showed some old DS video from the early years until OES... Then they talked about Tracker... ( not sure I remembre what they really said on it...).(remeber sound in the audience was bad....) 
+
+          p Then he went on the stage which was just on my right, So I was pretty close 5 meters or something..., and the view was good ! Sound also was good ( we had the stage's sound !). 
+
+
+          p MK played Beryl and also......
+          ul
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+            li
+            li
+            li
+            li 
+
+          p Beryl.... 
+
+          p Yeahhhh there were two takes... apparently there was a tenchincal sound problem... that no one noticed...but they prefered to play it again... It ended like this for the official broadcast. 
+          p Off camera, MK and ADC had a big hug together and made a picture.... they look like real old good friends ! We were not allowed indeed to approach Mark! I could say "hi" to Guy and Glen Staggers from my seat ;) Lovely men ! I really like them they always answer to our "Hello", or waves. 
+          p I thought they would play another song as usually they do for the Chanel's web site... and when I saw the band leaving the stage and other guys packing all...... I thought oh no.... not yet....and it was definatly finished... So no song for the web site :( 
+          p MK left the set quickly and then we were invited to leave.... Just for fun and with a huge smile ( the kidding one, you know?) I asked a security guy " Can go to the backstage, to kiss MK??" he replied " NO YOU CAN'T"... oh oh Well I'm just kidding man :D Btw.....It was a very very short moment but VERY good ! It was super to meet again fans. 
+
+          p And then the other part, not fun but intersting though ( even if the sound was still pretty bad...). 
+          p We left the set at 20:30.... and had to queue to get back our bags jackets and passports...it was 21:00...
+              
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("events/legrandjournal2015/legrandjournal2015-1.jpg")
+              .item
+                =image_tag("events/legrandjournal2015/legrandjournal2015-2.jpg")
+              .item
+                =image_tag("events/legrandjournal2015/legrandjournal2015-3.jpg")
+              .item
+                =image_tag("events/legrandjournal2015/legrandjournal2015-4.jpg")
+              .item
+                =image_tag("events/legrandjournal2015/legrandjournal2015-5.jpg")
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other events
+
+                li
+                  a href="lemans2004" Le Mans 2004
+                li
+                  a href="rtl2_2004" RTL2
+                li 
+                  a href="lemans2006" Le Mans 2006
+                li 
+                  a href="hayonwye2007" Hay On Wye 2007
+                li.active
+                  a href="meetingparis2008" Meet & Greet Paris
+                li 
+                  a href="legrandjournal2015" Le Grand Journal
+
+
+                  br
+                    
+            = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/events/side_bar'

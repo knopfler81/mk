@@ -23,19 +23,20 @@
 .section
   .container
     .col-xs-12.col-sm-12.col-md-12
-      h1.text-center.text-primary Sections
-      p.text-center Click on the images to visit sections
+      h1.text-center.text-primary MK & me... somehow...
+      p.text-center Click on the images to visit
     .row
-      .col-xs-12.col-sm-4.col-md-4
+      .col-xs-12.col-sm-4.col-md-4.under-section
         = link_to page_path('concerts/index') do
           = image_tag("mains/concerts.jpg", class:"category")
         h3.section-title Concerts
-      .col-xs-12.col-sm-4.col-md-4
+      .col-xs-12.col-sm-4.col-md-4.under-section
         = link_to page_path('calendars/index') do
           = image_tag("mains/calendars.jpg", class:"category")
         h3.section-title Calendars
-      .col-xs-12.col-sm-4.col-md-4
-        = image_tag("mains/events.jpg", class:"category")
+      .col-xs-12.col-sm-4.col-md-4.under-section
+        = link_to page_path("events/index")
+          = image_tag("mains/events.jpg", class:"category")
         h3.section-title Other events
 .section
   .container
@@ -43,23 +44,23 @@
       h1.text-center.text-primary Related Mark Knopfler websites
       p.text-center Click on the images to visit the related websites
     .row
-      .col-xs-12.col-sm-4.col-md-4
+      .col-xs-12.col-sm-4.col-md-4.under-section
         = link_to "http://www.markknopfler.com/" do
           = image_tag("mains/mkcom.jpg", class:"category")
-        h2.section-title Official MK Website
+        h3.section-title Official MK Website
         p  MK.com
         P  Visit the very official MK website, tour dates, shop, annoucements...
-      .col-xs-12.col-sm-4.col-md-4
+        
+      .col-xs-12.col-sm-4.col-md-4.under-section
         =link_to  "http://www.guyfletcher.co.uk/"  do
           = image_tag("mains/gf.jpg", class:"category")
-        h2.section-title Guy Fletcher 
-       
+        h3.section-title Guy Fletcher 
         p A very intersting Website to keep in your favorites.
         p Guy Fletcher runs here a forum, studio and tour diaries ! Have a look !
-      .col-xs-12.col-sm-4.col-md-4
+        
+      .col-xs-12.col-sm-4.col-md-4.under-section
         = link_to "http://www.amarkintime.org/forum/" do
           = image_tag("mains/forum.jpg", class:"category")
-        h2.section-title AMIT forum
-
+        h3.section-title AMIT forum
         p A very nice place to exchange with fans from all over the world! This a non official forum. 
         p Be cool and do not moan !

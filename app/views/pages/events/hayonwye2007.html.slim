@@ -1,0 +1,92 @@
+.container
+  .row
+    .col-md-9
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("events/hayonwye2007/hayonwye2007-0.jpg", title:"Hay On Wye", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Hay On Wye Festival
+          h4.concert-date  2nd, 3rd June 2007
+          - start_time =  "2007-06-02 12:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago  Unexpected trip where I got lucky to meet again the guitar hero #{date} ago 
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10  
+        
+          p Sigh* I’ve no pic of that meeting... didn’t dare to ask to the Man, MK was with his family. 
+          p I landed at BHX airport on Saturday 2nd June 2007. Phil and Pongsi, friends from Switzerland were waiting for me there. That was our first meeting. We rented a car to travel to Wales, destination Hay-On-Wye to see our guitar-hero.
+          p The first event we saw was Kitty Aldridge (MK’s wife) talking about her new book “Cryers Hill” and John Walsh about “…”.Mark was in the audience then and quite close to us. There I met other fans like Val and her husband and Martina.
+          p After that interview I met Mark outside but only for 10 seconds, just enough time to say hi, happy to meet you, and shake hands (always a pleasure to see him in person).
+          p Sunday 3rd June the D-Day for MK’s events! The reason why we are here.
+          p I met Matt, it’s him who he got me a ticket for the broadcast Hay-On-Sky.
+          p So I had the luck to attend the recording where Mark was interviewed about his career and played a new song “Secondary Waltz”. Some authors were invited too. The broadcast was shown on British TV (how funny I can see my friends and me, we look really serious).
+          p After that event we went to another Mark Knopfler interview but a in a bigger venue ( I heard about 1200s seats).
+          p This time Mark was interviewed by Matthew Evans. He spoke about his songbook and played few tunes with Guy Fletcher (Guy plays everything, guitar, bass, keyboards):
+
+          p Here is the set list
+
+          ol
+              li 
+                span<> Donegan’s gone,
+              li 
+                span<> Secondary Waltz,
+              li 
+                span<> Rüdiger,
+              li 
+                span<> Romeo and Juliet,
+              li 
+                span<> Sailing to Philadelphia,
+              li 
+                span<> Going Home,
+              li 
+                span<> Song for Sonny Liston (encores)
+
+          p MK was very cool, pretty funny, and seemed in very good shape.
+
+          p Monday 4th I came back to France, that was a quite long trip for a tiny week end, but my heart is full of memories.
+              
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("events/hayonwye2007/hayonwye2007-1.jpg")
+              .item
+                =image_tag("events/hayonwye2007/hayonwye2007-2.jpg")
+              .item
+                =image_tag("events/hayonwye2007/hayonwye2007-3.jpg")
+
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+          
+                
+
+        .row
+          .visible-xs.visible-sm.text-center
+            nav
+              ul.pagination.pagination-sm
+                h6.text-primary Jump to other events
+
+                li
+                  a href="lemans2004" Le Mans 2004
+                li
+                  a href="rtl2_2004" RTL2
+                li 
+                  a href="lemans2006" Le Mans 2006
+                li.active
+                  a href="hayonwye2007" Hay On Wye 2007
+                li 
+                  a href="meetingparis2008" Meet & Greet Paris
+                li 
+                  a href="legrandjournal2015" Le Grand Journal
+
+
+                  br
+                    
+            = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
+    
+    = render partial:'pages/events/side_bar'

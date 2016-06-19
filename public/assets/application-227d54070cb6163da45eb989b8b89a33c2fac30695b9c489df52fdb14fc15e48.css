@@ -26,7 +26,26 @@
 
 /* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .small-cal {
-  width: 90px;
+  width: 70px;
+}
+
+/* line 22, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.side-calendar {
+  margin-top: 2px;
+  color: gray;
+}
+
+/* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.paypal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 31, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+  .small-cal, .side-calendar, .side-title {
+    display: none;
+  }
 }
 /* line 3, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/concerts.sass */
 .circle {
@@ -253,53 +272,69 @@
 }
 
 /* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.under-section {
+  margin-bottom: 20px;
+}
+
+/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer {
   position: absolute;
 }
 
-/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
 
-/* line 33, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .contact-form {
   display: block;
   margin: 20px 100px 20px 100px;
 }
-/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 39, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .contact-form h3 {
   color: #114A74;
 }
 
-/* line 39, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 42, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 43, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 49, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 53, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 54, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.button-back {
-  margin-bottom: 30px;
-  background-color: red;
+@media screen and (max-width: 720px) {
+  /* line 58, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .section-title {
+    color: #64A6DD;
+    margin-top: 5px;
+    font-size: 20x;
+  }
+}
+@media screen and (max-width: 990px) {
+  /* line 64, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .section-title {
+    color: #64A6DD;
+    margin-top: 5px;
+    font-size: 25px;
+  }
 }
 @charset "UTF-8";
 /* This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -9171,55 +9206,70 @@ button.close {
 }
 
 /* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.under-section {
+  margin-bottom: 20px;
+}
+
+/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer {
   position: absolute;
 }
 
-/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
 
-/* line 33, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .contact-form {
   display: block;
   margin: 20px 100px 20px 100px;
 }
-/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 39, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .contact-form h3 {
   color: #114A74;
 }
 
-/* line 39, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 42, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 43, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 49, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 53, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 54, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.button-back {
-  margin-bottom: 30px;
-  background-color: red;
+@media screen and (max-width: 720px) {
+  /* line 58, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .section-title {
+    color: #64A6DD;
+    margin-top: 5px;
+    font-size: 20x;
+  }
 }
-
+@media screen and (max-width: 990px) {
+  /* line 64, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .section-title {
+    color: #64A6DD;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+}
 /* line 3, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/concerts.sass */
 .circle {
   border-radius: 50%;
@@ -9416,5 +9466,24 @@ button.close {
 
 /* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .small-cal {
-  width: 90px;
+  width: 70px;
+}
+
+/* line 22, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.side-calendar {
+  margin-top: 2px;
+  color: gray;
+}
+
+/* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.paypal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 31, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+  .small-cal, .side-calendar, .side-title {
+    display: none;
+  }
 }
