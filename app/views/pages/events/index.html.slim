@@ -4,37 +4,43 @@
       h1.text-primary  Other events with Mark 
       br
 
-      p I got really lucky a couple of times to attend special event with Mark, even met him !!
+      p I got really lucky a couple of times to attend special events with Mark, and EVEN meeting him !!
 
   .row
   
     .col-xs-offset-1.col-xs-10.events
       
       .col-xs-6.col-sm-4.col-md-4.col-lg-4
-        h5.text-center 2015
-        = link_to page_path('events/legrandjournal/index')do
+        h5.text-center  Le Grand Journal 2015
+        = link_to page_path('events/legrandjournal')do
           = image_tag("events/legrandjournal2015/legrandjournal2015-1.jpg", class: "calendar-preview")
           
       .col-xs-6.col-sm-4.col-md-4.col-lg-4
-        h5.text-center 2008
-        = link_to page_path('events/meetingparis2008/index')do
+        h5.text-center Meet & Greet Paris 2008
+        = link_to page_path('events/meetingparis2008')do
           = image_tag("events/meetingparis2008/meetingparis2008-1.jpg", class: "calendar-preview")  
           
       .col-xs-6.col-sm-4.col-md-4.col-lg-4
-        h5.text-center 2007
-        = link_to page_path('events/hayonwye2007/index')do
+        h5.text-center Hay On Wye 2007
+        = link_to page_path('events/hayonwye2007/')do
           = image_tag("events/hayonwye2007/hayonwye2007-1.jpg", class: "calendar-preview")  
           
+  .row      
     .col-xs-offset-1.col-xs-10.events
     
       .col-xs-6.col-sm-4.col-md-4.col-lg-4
-        h5.text-center 2006
-        = link_to page_path('events/lemans2006/index')do
+        h5.text-center Le Mans 2006
+        = link_to page_path('events/lemans2006')do
           = image_tag("events/lemans2006/lemans2006-1.jpg", class: "calendar-preview")  
 
       .col-xs-6.col-sm-4.col-md-4.col-lg-4
-        h5.text-center 2004
-        = link_to page_path('events/lemans2004/lemans2004')do
+        h5.text-center RTL2 2004
+        = link_to page_path('events/rtl2_2004')do
+          = image_tag("events/rtl2_2004/rtl2_2004-1.jpg", class: "calendar-preview")
+          
+      .col-xs-6.col-sm-4.col-md-4.col-lg-4
+        h5.text-center Le Mans 2004
+        = link_to page_path('events/lemans2004')do
           = image_tag("events/lemans2004/lemans2004-1.jpg", class: "calendar-preview")
 
 
