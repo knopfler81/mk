@@ -1,48 +1,68 @@
 /* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-preview {
-  width: 200px;
-  padding: 2px;
-  border: lightgray solid 1px;
-  margin-left: 50px;
+  width: 100%;
+  border: black solid 1px;
   margin-top: 2px;
 }
 
-/* line 8, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 6, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-portrait {
   max-width: 600px;
 }
 
-/* line 11, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 9, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .btn-cal {
   margin-top: 20px !important;
   float: left !important;
 }
 
-/* line 15, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 13, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-presentation {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-/* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 17, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .small-cal {
   width: 70px;
 }
 
-/* line 22, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 20, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .side-calendar {
   margin-top: 2px;
   color: gray;
 }
 
-/* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 24, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .paypal {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 28, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr.paypal-top {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr.paypal-top {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+/* line 37, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.calendar-index h5 {
+  font-weight: bolder;
+}
+
+/* line 41, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr .calendar-hr {
+  border-top: #337cbb solid 1px !important;
 }
 
 @media screen and (max-width: 990px) {
-  /* line 31, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+  /* line 45, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
   .small-cal, .side-calendar, .side-title {
     display: none;
   }
@@ -233,40 +253,46 @@
   color: #114A74;
   text-align: right;
 }
+
+/* line 17, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/contacts.sass */
+.contact-form {
+  margin-top: 5%;
+  display: block;
+  width: 100%;
+}
+/* line 21, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/contacts.sass */
+.contact-form h3 {
+  color: #114A74;
+}
 /* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/events.sass */
 .event-preview {
-  width: 200px;
-}
-
-/* line 5, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/events.sass */
-.event-page {
-  height: 80%;
+  width: 100%;
+  margin-top: 10px;
 }
 /* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-html, body {
-  height: 100%;
-}
-
-/* line 4, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .navbar {
   background-color: #337cbb;
   border-radius: 0px !important;
 }
 
-/* line 8, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 6, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .navbar-toggle .icon-bar {
   background-color: #ffffff !important;
 }
 
-/* line 11, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 9, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .collapse {
   background: #337cbb !important;
 }
 
-/* line 15, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 13, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .nav a {
   color: #FFFFFF !important;
   text-decoration: none;
+}
+/* line 16, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.nav a:hover {
+  background-color: #64A6DD !important;
 }
 
 /* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
@@ -283,68 +309,86 @@ html, body {
 .section-title {
   color: #64A6DD;
   margin-top: 5px;
+  padding: 5px;
 }
 
-/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 30, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.section-description {
+  padding-left: 5px;
+}
+
+/* line 33, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .under-section {
   margin-bottom: 20px;
 }
 
-/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.footer-style {
-  height: 30px;
+/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.footer {
+  position: relative;
+  height: 10%;
   background-color: #337cbb;
 }
 
-/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 41, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.footer-content {
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+/* line 45, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
 
-/* line 40, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.contact-form {
-  display: block;
-  margin: 20px 100px 20px 100px;
-}
-/* line 43, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.contact-form h3 {
-  color: #114A74;
-}
-
-/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 54, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 53, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 57, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 57, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 61, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 62, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  /* line 66, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
   .section-title {
     color: #64A6DD;
     margin-top: 5px;
-    font-size: 20x;
+    font-size: 20px;
+  }
+
+  /* line 71, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  h1 {
+    font-size: 26px !important;
+  }
+
+  /* line 74, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .footer-text {
+    font-size: 80%;
+  }
+
+  /* line 76, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .fa {
+    font-size: 80% !important;
   }
 }
 @media screen and (max-width: 990px) {
-  /* line 68, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  /* line 80, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
   .section-title {
     color: #64A6DD;
     margin-top: 5px;
@@ -9182,31 +9226,41 @@ button.close {
   text-align: right;
 }
 
-/* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-html, body {
-  height: 100%;
+/* line 17, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/contacts.sass */
+.contact-form {
+  margin-top: 5%;
+  display: block;
+  width: 100%;
+}
+/* line 21, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/contacts.sass */
+.contact-form h3 {
+  color: #114A74;
 }
 
-/* line 4, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .navbar {
   background-color: #337cbb;
   border-radius: 0px !important;
 }
 
-/* line 8, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 6, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .navbar-toggle .icon-bar {
   background-color: #ffffff !important;
 }
 
-/* line 11, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 9, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .collapse {
   background: #337cbb !important;
 }
 
-/* line 15, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 13, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .nav a {
   color: #FFFFFF !important;
   text-decoration: none;
+}
+/* line 16, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.nav a:hover {
+  background-color: #64A6DD !important;
 }
 
 /* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
@@ -9223,68 +9277,86 @@ html, body {
 .section-title {
   color: #64A6DD;
   margin-top: 5px;
+  padding: 5px;
 }
 
-/* line 29, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 30, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.section-description {
+  padding-left: 5px;
+}
+
+/* line 33, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .under-section {
   margin-bottom: 20px;
 }
 
-/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.footer-style {
-  height: 30px;
+/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.footer {
+  position: relative;
+  height: 10%;
   background-color: #337cbb;
 }
 
-/* line 36, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 41, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+.footer-content {
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+/* line 45, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
 
-/* line 40, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.contact-form {
-  display: block;
-  margin: 20px 100px 20px 100px;
-}
-/* line 43, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
-.contact-form h3 {
-  color: #114A74;
-}
-
-/* line 46, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 50, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 54, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 53, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 57, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 57, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+/* line 61, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 62, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  /* line 66, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
   .section-title {
     color: #64A6DD;
     margin-top: 5px;
-    font-size: 20x;
+    font-size: 20px;
+  }
+
+  /* line 71, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  h1 {
+    font-size: 26px !important;
+  }
+
+  /* line 74, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .footer-text {
+    font-size: 80%;
+  }
+
+  /* line 76, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  .fa {
+    font-size: 80% !important;
   }
 }
 @media screen and (max-width: 990px) {
-  /* line 68, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
+  /* line 80, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/general.sass */
   .section-title {
     color: #64A6DD;
     margin-top: 5px;
@@ -9461,59 +9533,75 @@ html, body {
 }
 /* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-preview {
-  width: 200px;
-  padding: 2px;
-  border: lightgray solid 1px;
-  margin-left: 50px;
+  width: 100%;
+  border: black solid 1px;
   margin-top: 2px;
 }
 
-/* line 8, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 6, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-portrait {
   max-width: 600px;
 }
 
-/* line 11, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 9, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .btn-cal {
   margin-top: 20px !important;
   float: left !important;
 }
 
-/* line 15, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 13, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .calendar-presentation {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-/* line 19, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 17, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .small-cal {
   width: 70px;
 }
 
-/* line 22, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 20, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .side-calendar {
   margin-top: 2px;
   color: gray;
 }
 
-/* line 26, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+/* line 24, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
 .paypal {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 28, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr.paypal-top {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+/* line 32, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr.paypal-top {
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+/* line 37, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+.calendar-index h5 {
+  font-weight: bolder;
+}
+
+/* line 41, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+hr .calendar-hr {
+  border-top: #337cbb solid 1px !important;
 }
 
 @media screen and (max-width: 990px) {
-  /* line 31, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
+  /* line 45, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/calendars.sass */
   .small-cal, .side-calendar, .side-title {
     display: none;
   }
 }
 /* line 1, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/events.sass */
 .event-preview {
-  width: 200px;
-}
-
-/* line 5, /Users/nellyduclos/Desktop/ROR/mk_project/app/assets/stylesheets/events.sass */
-.event-page {
-  height: 80%;
+  width: 100%;
+  margin-top: 10px;
 }
