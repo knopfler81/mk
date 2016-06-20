@@ -66,7 +66,7 @@
                 
 
         .row
-          .visible-xs.visible-sm.text-center
+          .visible-xs.visible-sm
             nav
               ul.pagination.pagination-sm
                 h6.text-primary Jump to other events
@@ -87,6 +87,6 @@
 
                   br
                     
-            = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
+        = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
     
     = render partial:'pages/events/side_bar'
