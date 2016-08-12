@@ -1,0 +1,58 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: 'login-form') do |f| %>
+  <div class="form-title">
+    <span class="form-title">Welcome.</span>
+    <span class="form-subtitle">Please login.</span>
+  </div>
+
+  <div class="alert alert-danger display-hide">
+    <button class="close" data-close="alert"></button>
+    <span> Enter any username and password. </span>
+  </div>
+
+  <div class="form-group">
+  <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+    <label class="control-label visible-ie8 visible-ie9">Email</label>
+      <div class="input-icon">
+          <i class="fa fa-user"></i>
+            <%= f.email_field :email, autofocus: true, class: 'form-control placeholder-no-fix', autocomplete: false, placeholder: 'Email' %>
+      <!-- <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> -->
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label class="control-label visible-ie8 visible-ie9">Password</label>
+      <div class="input-icon">
+          <i class="fa fa-lock"></i>
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control placeholder-no-fix', autocomplete: false, placeholder: 'Password' %>
+      <!-- <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" /> </div> -->
+      </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Login", class: 'btn red btn-block uppercase' %>
+  </div>
+
+  <div class="form-actions">
+    <% if devise_mapping.rememberable? %>
+      <div class="pull-left">
+        <%= content_tag :label, class: "rememberme mt-checkbox mt-checkbox-outline" do -%>
+        <%= f.check_box :remember_me, value: '1' %>
+        Remember me
+        <%= content_tag :span %>
+        <% end-%>
+      </div>
+
+      <div class="pull-right forget-password-block">
+          <%= link_to 'Forgot Password?', 'new_user_confirmation_path', class: 'forget-password', id: 'forget-password' %>
+      </div>
+      <!-- <button type="submit" class="btn green pull-right"> Login </button> -->
+    <% end -%>
+  </div>
+
+  <div class="create-account">
+    <p> Don't have an account yet ?&nbsp;
+    <%= link_to 'Create an account', new_user_registration_path %>
+    <!-- <a href="javascript:;" id="register-btn"> Create an account </a> -->
+    </p>
+  </div>
+<% end %>
