@@ -1,4 +1,4 @@
-.navbar
+.nav.navbar
   .container
     .navbar-header
       button.navbar-toggle[type="button" data-toggle="collapse" data-target="#navbar-ex-collapse"]
@@ -7,10 +7,11 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
+      .navbar-brand
+        =link_to "HOME", root_path
+        
     #navbar-ex-collapse.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        li.active
-          = link_to "Home", root_path
         li
           =link_to "Concerts", page_path('concerts/index')
         li
