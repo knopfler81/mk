@@ -1,17 +1,19 @@
 .cover
   =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, class:"landing-video")
   
-  .main-title.text-center
-    .row
-      .col-xs-12.col-sm-12.col-md-12
-        h1 Mark Knopfler
-        p Mark in summer long ago
-        br
-        br
-        =link_to root_path(@root, anchor: "about") do
-          i.fa.fa-4x.fa-arrow-down.fa-fw.hub.text-inverse
+  .main-title
+  
+    h1 Mark Knopfler
+    p Mark in summer long ago
+    br
+    =link_to root_path(@root, anchor: "about") do
+      i.fa.fa-4x.fa-arrow-down.fa-fw.hub
+      br
+      br
 
+          
 .section
+br
   .container
     .row
       .col-xs-12.col-sm-6.col-md-5
