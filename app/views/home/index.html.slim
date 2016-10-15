@@ -1,18 +1,19 @@
 .cover
-  .cover-image[style="background-image : url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff')"]
-  .container
-    .row
-      .col-xs-12.col-sm-12.col-md-12.text-center
-        h1.text-inverse
-          | Mark Knopfler
-        p.text-inverse
-          | Mark in summer long ago
-        br
-        br
-        =link_to root_path(@root, anchor: "about") do
-          i.fa.fa-4x.fa-arrow-down.fa-fw.hub.text-inverse
+  =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, class:"landing-video")
+  
+  .main-title
+  
+    h1 Mark Knopfler
+    p Mark in summer long ago
+    br
+    =link_to root_path(@root, anchor: "about") do
+      i.fa.fa-4x.fa-arrow-down.fa-fw.hub
+      br
+      br
+
           
 .section
+br
   .container
     .row
       .col-xs-12.col-sm-6.col-md-5
