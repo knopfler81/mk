@@ -1,38 +1,8 @@
 .footer
   .container
-    .row.footer-content
-        .col-xs-3.col-sm-3.col-md-3.col-lg-3.text-center
-          = link_to new_contact_path(@contact) do
-            i.fa.fa-bug.fa-fw.text-inverse
-            small.footer-text
-              span<> Report a bug or typos
-
-        .col-xs-3.col-sm-3.col-md-3.col-lg-3.text-center
-          = link_to new_contact_path(@contact) do
-            i.fa.fa-envelope-o.fa-fw.hub.text-inverse
-            small.footer-text
-              span<> Contact me
-              
-        .col-xs-3.col-sm-3.col-md-3.col-lg-3.text-center
-          .row
-            .col-xs-12
-              small.footer-text VideoClip Banner
-            .col-xs-12
-              small.footer-text ©Denis Hulnet
-              
-        .col-xs-3.col-sm-3.col-md-3.col-lg-3.text-center
-          .row
-            .col-xs-12
-              - start_time =  "2016-10-15 13:23:00 "
-              - end_time   =  Time.now
-              - date = distance_of_time_in_words(start_time, end_time).to_s
-              small.footer-text Last update #{date} ago
-            .col-xs-12
-              small.footer-text
-                |© 
-                span<>
-                = Date.today.year 
-                span<> Nelly Duclos
-                
+    .row.footer-content        
+      .col-xs-12.col-sm-3.col-md-3.col-lg-3.text-center
+        small.footer-text Design © Nelly Duclos
+          
               
         

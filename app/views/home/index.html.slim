@@ -1,27 +1,22 @@
 .cover
-  =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, poster:"url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?')",class:"landing-video")
-  
+  /=video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, poster:"https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e",class:"landing-video")
+  .cover-image
   .main-title
   
     h1 Mark Knopfler
     p Mark in summer long ago
     br
     =link_to root_path(@root, anchor: "about") do
-      i.fa.fa-4x.fa-arrow-down.fa-fw.hub
-      br
-      br
-
+      i.fa.fa-4x.fa-arrow-down
           
 .section
-br
   .container
     .row
       .col-xs-12.col-sm-6.col-md-5
         =image_tag("mains/band.png", class:'band')
       .col-xs-12.col-sm-6.col-md-7#about
         br
-        h2.text-primary  About the website
-        p.site-description "Mark In Summer Long Ago, refers to the very first time I saw Mark Knopfler on stage, the 9th July 1996 and to his wonderful song, A Night In Summer Long Ago that I used to listen with my dearly loved grand mother. This website is to share with all the fans my passion of Mark Knopfler's music. Reviews and pictures from the concerts I've atended and also about my meetings with the Man ! I hope You'll enjoy.
+        p.site-description Mark In Summer Long Ago, refers to the very first time I saw Mark Knopfler on stage, the 9th July 1996 and to his wonderful song, A Night In Summer Long Ago that I used to listen with my dearly loved grand mother. This website is to share with all the fans my passion of Mark Knopfler's music. Reviews and pictures from the concerts I've atended and also about my meetings with the Man ! I hope You'll enjoy.
 .section
   .container
     .col-xs-12.col-sm-12.col-md-12
