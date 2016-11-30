@@ -1,125 +1,122 @@
 .container
-  .row
-    .col-xs-offset-1.col-xs-10
-      h1.text-primary  My Mark Knopfler's Calendars
-      br
-
-      p Every years since 2006 I used to create a free MK Calendar for fans enjoyment only. 
-      p 2015 and 2016 were a little bit different. I had decided to use my MK calendars to help raise funds for charity. 
-      p The Calendars are still free, but I would be delighted if you would like to make a donation to this, which is a cause dear to my heart. So please donate anything you can afford, it all helps.
-      p I did this because, I want to help research for Neurofibromatosis diseases, of which type 1 is also known as Von Recklinghausen disease.
-      |  Below you will find the direct link to the foundation.
-      p
-      a href="http://www.anrfrance.fr"  A.N.R
-      span<>means Foundation Neurofibromatosis & Recklinghausen.
-      span<> For more information about the disease click
-      a href="http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=636"  here.
-      p
-      p You can use Paypal, or credit card (with the paypal link below).  Please don’t forget to mention A.N.R-MKCalendar2016 and your country with your payement. (If you need receipt, mention your email address too)  .
-      p.text-danger The payements directly go to the A.N.R fundation, I don't get ANY benefit!
-
-
-  .row
-    hr.paypal-top
-    .col-xs-offset-4.col-xs-4.col-sm-offset-4.col-sm-4.paypal      
-      form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
-        input type="hidden" name="cmd" value="_s-xclick"
-        input type="hidden" name="hosted_button_id" value="RG6X4YMUPQLJE"
-        input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
-  hr.paypal-bottom
-
-  .row
-  
-    .col-xs-offset-1.col-xs-10.calendar-index
-      h3.text-center Portrait format
-      p.text-center Click on the pictures to see all months and download your printable version
-      br
+  .row.calendar-index
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      button.btn.btn-primary.about-cal[type="button" data-toggle="modal" data-target="#myModal"]
+          | About my calendars
       
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2016')do
-            = image_tag("calendars/calendar2016/2016-1.jpg", class: "calendar-preview")
-            h4 2016
-            
-      
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2015')do
-            = image_tag("calendars/calendar2015/2015-2.jpg", class: "calendar-preview")  
-            h4 2015
-            
-
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2014')do
-            = image_tag("calendars/calendar2014/2014-5.jpg", class: "calendar-preview")  
-            h4 2014
-            
-
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2013')do
-            = image_tag("calendars/calendar2013/2013-10.jpg", class: "calendar-preview")  
-            h4 2013
-            
-
-
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2011')do
-            = image_tag("calendars/calendar2011/2011-6.jpg", class: "calendar-preview")
-            h4 2011
-            
-    
-
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2010')do
-            = image_tag("calendars/calendar2010/2010-1.jpg", class: "calendar-preview") 
-            h4 2010
-            
-
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2007')do
-            = image_tag("calendars/calendar2007/2007-3.jpg", class: "calendar-preview") 
-            h4 2007
-            
-    
-  .row
-  
-    .col-xs-offset-1.col-xs-10.calendar-index
-      h3.text-center Landscape format
-      p.text-center Click on the pictures to see all months and download your printable version
-      br
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2012')do
-            = image_tag("calendars/calendar2012/2012-7.jpg", class: "calendar-preview") 
-            h4 2012
-            
-          
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2009')do
-            = image_tag("calendars/calendar2009/2009-12.jpg", class: "calendar-preview") 
-            h4 2009
-      
-          
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2008')do
-            = image_tag("calendars/calendar2008/2008-8.jpg", class: "calendar-preview")  
-            h4 2008
-            
+  #myModal.modal.fade[tabindex="-1" role="dialog" aria-labelledby="myModalLabel"]
+    .modal-dialog[role="document"]
+      .modal-content
+        .modal-header
+          button.close[type="button" data-dismiss="modal" aria-label="Close"]
+            span[aria-hidden="true"]
+              | ×
+          h4#myModalLabel.modal-title
+           | My Mark Knopfler's Calendars
+        .modal-body
+        .row
+          .col-xs-offset-1.col-xs-10
+            p Every years since 2006 I used to create a free MK Calendar for fans enjoyment only. 
+            p 2015 and 2016 were a little bit different. I had decided to use my MK calendars to help raise funds for charity. 
+            p The Calendars are still free, but I would be delighted if you would like to make a donation to this, which is a cause dear to my heart. So please donate anything you can afford, it all helps.
+            p I did this because, I want to help research for Neurofibromatosis diseases, of which type 1 is also known as Von Recklinghausen disease.
+            |  Below you will find the direct link to the foundation.
+            p
+            a href="http://www.anrfrance.fr"  A.N.R
+            span<>means Foundation Neurofibromatosis & Recklinghausen.
+            span<> For more information about the disease click
+            a href="http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&Expert=636"  here.
+            p
+            p You can use Paypal, or credit card (with the paypal link below).  Please don’t forget to mention A.N.R-MKCalendar2016 and your country with your payement. (If you need receipt, mention your email address too)  .
+            p.text-danger The payements directly go to the A.N.R fundation, I don't get ANY benefit!
         
-          
-      .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
-        .make-it-slow
-          = link_to page_path('calendars/2006')do
-            = image_tag("calendars/calendar2006/2006-12.jpg", class: "calendar-preview")  
-            h4 2006
-            
+        .row
+          hr.paypal-top
+          .col-xs-offset-4.col-xs-4.col-sm-offset-4.col-sm-4.paypal      
+            form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
+              input type="hidden" name="cmd" value="_s-xclick"
+              input type="hidden" name="hosted_button_id" value="RG6X4YMUPQLJE"
+              input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
+        hr.paypal-bottom
+        .modal-footer
+          button.btn.btn-danger[type="button" data-dismiss="modal"]
+            | Close
+    
 
-  br
-  br  
+
+  .row.calendar-index
+      
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2016')do
+          = image_tag("calendars/calendar2016/2016-1.jpg", class: "calendar-preview")
+          h4 2016
+            
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2015')do
+          = image_tag("calendars/calendar2015/2015-2.jpg", class: "calendar-preview")  
+          h4 2015
+          
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2014')do
+          = image_tag("calendars/calendar2014/2014-5.jpg", class: "calendar-preview")  
+          h4 2014
+          
+
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2013')do
+          = image_tag("calendars/calendar2013/2013-10.jpg", class: "calendar-preview")  
+          h4 2013
+          
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2011')do
+          = image_tag("calendars/calendar2011/2011-6.jpg", class: "calendar-preview")
+          h4 2011
+          
+
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2010')do
+          = image_tag("calendars/calendar2010/2010-1.jpg", class: "calendar-preview") 
+          h4 2010
+          
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2007')do
+          = image_tag("calendars/calendar2007/2007-3.jpg", class: "calendar-preview") 
+          h4 2007
+          
+    
+  .row.calendar-index
+
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2012')do
+          = image_tag("calendars/calendar2012/2012-7.jpg", class: "calendar-preview") 
+          h4 2012
+          
+        
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2009')do
+          = image_tag("calendars/calendar2009/2009-12.jpg", class: "calendar-preview") 
+          h4 2009
+    
+        
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2008')do
+          = image_tag("calendars/calendar2008/2008-8.jpg", class: "calendar-preview")  
+          h4 2008
+          
+      
+        
+    .col-xs-12.col-sm-3.col-md-3.col-lg-3.cal-panel
+      .make-it-slow
+        = link_to page_path('calendars/2006')do
+          = image_tag("calendars/calendar2006/2006-12.jpg", class: "calendar-preview")  
+          h4 2006
