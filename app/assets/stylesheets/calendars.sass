@@ -25,7 +25,14 @@
   margin-top: 20px
 
 .small-cal
-  width           : 70px
+
+  width                  : 80px
+  -webkit-filter         : grayscale(100%)
+  &:hover
+    width                : 90px
+    border               : 5px solid #337cbb
+    -webkit-transition   : .3s
+    -webkit-filter       : none
 
 .side-calendar
   margin-top             : 2px
