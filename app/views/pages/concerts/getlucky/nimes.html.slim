@@ -11,9 +11,9 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
-        .col-md-offset-1.col-md-10         
+        .col-md-offset-1.col-md-10
           p After a short sleep... mmm 4 hours?  I had to wake up to take my train to Nîmes! I arrived around 11am . When I first arrived in front of I tought it wasn’t that big... but when I got inside for the visit Woaww I was really Impressed how high and huge it is... It’s  was built 2 000 years ago, can you imagine the big work and how long it took them to finish it !?? Certainly more than a life for some of them...I’m always impressed by old building and have spacial though for the men whom worked on them. Nowadays we would be undable to make something similar!! No one would do such hard work...
           p Well back to the main story ! I met again the people from the AFMK  for lunch near the arenas, it was very warm outside and I felt little bad because of the heat. I was refreshing myself with some ice cubes in my back lol.  Before picking up our presales tickets I went to my hotel for a COLD shower and for shorter clothes ( it was raining when i left my hometown so... jeans & trainers were requiered....).
           p We picked up our tix at 4pm and started to queue a little hour later, at mk.com gate’s. The security was very stric and frisked all the bags very carefully not for camera but for arms. Nine years later same venue, for MK gig’s there was a knife fight, Mark said he doesn’t want to see that happening again.
@@ -23,8 +23,8 @@
 
           p Again the concert went fast, and we had little trouble during the encore... We couldn’t stay standed because of some people yelling at us to sit down, they were very nasty... So as my chair was taken by someone else I staid at the barrier but kneeled. That was weird but it made Mike and Danny laught when I waved during SFA( still kneeled...).  I was very angry to finish the encore on my knees it was  really unconfortable as the barrier was high and I’m not that tall! The end of the concert was a bit wasted by some behavour... But two days after  it’s just an old memory, the most important was to be there in whatever position . ( Next time I’ll try lying down...lol).
 
-                  
-          
+
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -49,20 +49,20 @@
                 =image_tag("concerts/2010/nimes2010/nimes10-9.jpg")
               .item
                 =image_tag("concerts/2010/nimes2010/nimes10-10.jpg")
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="london1" London 1sr
@@ -78,12 +78,12 @@
                   a href="nimes"   nimes
                 li
                   a href="nimes"  Nîmes
-              
-    
-                /   a aria-label="Next" href="#" 
+
+
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/getlucky/side_bar'

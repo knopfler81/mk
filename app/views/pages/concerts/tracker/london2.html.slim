@@ -11,22 +11,22 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p.text-bold  Second concert in London, and actually first night at the Royal Albert Hall !
           p As usually we, fans, had a pre-meeting at the Stanhope Arms pub before the show. Traveling to see Mark is always a good excuse to also meet friends from everywhere in the world and that's a big part of the enjoyement
           p Show Time,
           p Ruth Moody & her band were opening the act tonight. I can't say that I don't like her, some tunes are very nice, the band is very talented though, but this is definitly not my cup of tea...
-        
+
           p Then the "real" show started ! Musicians arrived on stage, and started playing some rythm then Paul Crockford introduced Mark Knopfler, and the show started.
           p Again Mark was in a very good mood!
           p The atmosphere was really great tonight ! There were severals standing ovations! It's was kinda electric this evening! Also, there was a real good interaction bewteem Mark and his musicians. Now the band is definitely at its best and you can see/hear it !
           p I got lucky because my dutch sister AKA Ingrid got me a front row ticket (yes againn, she's definitly the fastest)! The Royal Albert Hall is such an amazing venue, I think from everywhere in the audience you can have a good time, btw I would never ever trade a front row tix for a balcony one, even with champagne & co. The thing I like the most at the RAH is that the stage is very low, there is no security gates (even if the security guys have became "boring"...) so you can easly rush to the stage for the encores...
           p Ruth Moody came back on stage for a couple of songs, the pity is that they have dropped "Kingdom Of Gold" which was super in the O2...I really miss this duet, and even more the beautifull guitar ending solo.
           p Well talking about tracks, here's the complet setlist of tonight show...( actually no suprise, same as friday with out KOG "sigh")
-          
-          
+
+
           .row.set-list
             .col-md-offset-1.col-md-4
               p 01. Broken Bones
@@ -38,7 +38,7 @@
               p 07. Laughs And Jokes And Drinks And Smokes
               p 08. Romeo And Juliet (With Nigel)
 
-            
+
             .col-md-4
               p 09. Sultans Of Swing
               p 10. Mighty Man
@@ -50,7 +50,7 @@
               p 16. Wherever I Go (With Ruth Moody)
               p 17. Going Home (With Nigel)
 
-              
+
       .row.review-body
         .col-md-offset-1.col-md-10
          p Tonight the rush time was during the Telegraph Road's final solo, It's the first time in the UK that I see such a rush !!
@@ -87,17 +87,17 @@
                 =image_tag("concerts/2015/london2015-2/london15-2-12.jpg")
               .item
                 =image_tag("concerts/2015/london2015-2/london15-2-13.jpg")
-                              
-                 
+
+
             = render partial:('pages/concerts/carousel')
-      
+
       .row
         .visible-xs.visible-sm.text-center
           nav
             ul.pagination.pagination-sm
-              h6.text-primary Jump to other concerts
+              h6.title-dark Jump to other concerts
               / li
-              /   a aria-label="Previous" href="#" 
+              /   a aria-label="Previous" href="#"
               /     span aria-hidden="true"  &laquo;
               li
                 a href="sion"  Sion
@@ -118,10 +118,10 @@
               li
                 a href="london1"  London 1st
               / li
-              /   a aria-label="Next" href="#" 
+              /   a aria-label="Next" href="#"
               /     span aria-hidden="true"  &raquo;
                 br
-                  
+
           = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
     = render partial:'pages/concerts/tracker/side_bar'

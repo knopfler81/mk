@@ -11,11 +11,11 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
-        .col-md-offset-1.col-md-10         
-          p Mark Knopfler has been playing 6 sold-out shows in a row at the Royal Albert Hall in London.          
-          p Here’s my review of the first two, which I have attended.         
+        .col-md-offset-1.col-md-10
+          p Mark Knopfler has been playing 6 sold-out shows in a row at the Royal Albert Hall in London.
+          p Here’s my review of the first two, which I have attended.
           p We first had a fan meeting at The Stanhope Arms on Gloucester Road. I really enjoyed meeting all those wonderful people again (and the new faces of course)!!
           p I missed that atmosphere which is very special with fans. Being with people who have the same hobby, who feel the same as you do towards the music, is magical... Crazy fools who travel to see the man and his beautiful band !
           p After a few drinks and a little snack we walked to the magical venue - the RAH ! - then waited a bit in a line-up to pick up our pre-ordered tix (I booked mine last June).
@@ -31,8 +31,8 @@
           p At a Mark Knopfler concert, if there is one thing I’m waiting for (in a seated venue), it is the end of Telegraph Road to rush at the front of the stage ! Standing closer to the marvellous band... Tickle their calves...LOL. Being there, I wished the concert would last for another 2 hours !!!
           p That is what I have to say about my trip to London, for now! More to come soon.... maybe when I’ll get down from my cozy little cloud !!
 
-          
-          
+
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -57,20 +57,20 @@
                 =image_tag("concerts/2010/london2010-1/london10-1-9.jpg")
               .item
                 =image_tag("concerts/2010/london2010-1/london10-1-10.jpg")
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="london1" London 1sr
@@ -86,12 +86,12 @@
                   a href="lyon"   Lyon
                 li
                   a href="nimes"  Nîmes
-              
-    
-                /   a aria-label="Next" href="#" 
+
+
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/getlucky/side_bar'

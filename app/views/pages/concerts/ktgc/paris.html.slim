@@ -11,14 +11,14 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p It's time for me to share with you my best evening ever! I attended the gig in Paris Bercy , I was also invited to the Meet And Greet with Ingrid. We had some problems picking up the passes and then finding the access to the meet and greet because the security didn't know where it was. We were really nervous and stressed, we ran all around the Hall (with high heels for me, gloups!). But finally we met a very kind man who brought us to the M&G. I was scared that I would miss it because of the security...
           p We were around 17 people (but I think only 4 true fans) the others looked like business people. Danny came first and directly shook our hand, and Mark did the same. They played 3 songs all together and then Mark stopped to sign a few autographs and make pictures (while the others where still playing). As always it's a pleasure to meet him, but lots of emotion for me (I was shaking...).
           p He signed my Kill to get crimson's program and made a picture. After we saw Richard and Guy! So sweet men too!
-          p The concert was wonderful I had a first row in the middle, (in Bercy it's unbelievable) the sound was very good not too loud, perfect for me. I really enjoyed it and cried like a baby for Hill Farmers Blues I love this one too much. I think we were around 11 000 people in the POPB. The audience was very hot ! We didn't have the oé oé oé... btw the band was in perfect shape and gave us a great time. One thing which made me happy again at the end of the concert when they were leaving is that some members of the band ( Danny and Guy) waved at me because they recognized me from the M&G... And even Mark who blew me a kiss! I don't have many pictures because of a memory card's incident... but finally a few nice ones to share. Check out the Meeting section for other pics.            
-    
+          p The concert was wonderful I had a first row in the middle, (in Bercy it's unbelievable) the sound was very good not too loud, perfect for me. I really enjoyed it and cried like a baby for Hill Farmers Blues I love this one too much. I think we were around 11 000 people in the POPB. The audience was very hot ! We didn't have the oé oé oé... btw the band was in perfect shape and gave us a great time. One thing which made me happy again at the end of the concert when they were leaving is that some members of the band ( Danny and Guy) waved at me because they recognized me from the M&G... And even Mark who blew me a kiss! I don't have many pictures because of a memory card's incident... but finally a few nice ones to share. Check out the Meeting section for other pics.
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -46,26 +46,26 @@
               .item
                 =image_tag("concerts/2008/paris2008/paris08-11.jpg")
 
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="amsterdam1"  Amsterdam
                 li
                   a href="amsterdam2"  Amsterdam
                 li
-                  a href="rotterdam"  Rotterdam  
+                  a href="rotterdam"  Rotterdam
                 li.active
                   a href="paris"  Paris
                 li
@@ -74,7 +74,7 @@
                   a href="london1"  London1st
 
                   br
-                    
+
             = link_to 'Back to Kill To Get Crimson Tour', page_path('concerts/ktgc'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/ktgc/side_bar'

@@ -10,12 +10,12 @@
           - start_time =  "2007-06-02 12:00:00 +0100"
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
-          p.time-ago  Unexpected trip where I got lucky to meet again the guitar hero #{date} ago 
-          
+          p.time-ago  Unexpected trip where I got lucky to meet again the guitar hero #{date} ago
+
       .row.review-body
-        .col-md-offset-1.col-md-10  
-        
-          p Sigh* I’ve no pic of that meeting... didn’t dare to ask to the Man, MK was with his family. 
+        .col-md-offset-1.col-md-10
+
+          p Sigh* I’ve no pic of that meeting... didn’t dare to ask to the Man, MK was with his family.
           p I landed at BHX airport on Saturday 2nd June 2007. Phil and Pongsi, friends from Switzerland were waiting for me there. That was our first meeting. We rented a car to travel to Wales, destination Hay-On-Wye to see our guitar-hero.
           p The first event we saw was Kitty Aldridge (MK’s wife) talking about her new book “Cryers Hill” and John Walsh about “…”.Mark was in the audience then and quite close to us. There I met other fans like Val and her husband and Martina.
           p After that interview I met Mark outside but only for 10 seconds, just enough time to say hi, happy to meet you, and shake hands (always a pleasure to see him in person).
@@ -28,25 +28,25 @@
           p Here is the set list
 
           ol
-              li 
+              li
                 span<> Donegan’s gone,
-              li 
+              li
                 span<> Secondary Waltz,
-              li 
+              li
                 span<> Rüdiger,
-              li 
+              li
                 span<> Romeo and Juliet,
-              li 
+              li
                 span<> Sailing to Philadelphia,
-              li 
+              li
                 span<> Going Home,
-              li 
+              li
                 span<> Song for Sonny Liston (encores)
 
           p MK was very cool, pretty funny, and seemed in very good shape.
 
           p Monday 4th I came back to France, that was a quite long trip for a tiny week end, but my heart is full of memories.
-              
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -58,35 +58,35 @@
               .item
                 =image_tag("events/hayonwye2007/hayonwye2007-3.jpg")
 
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other events
+                h6.title-dark Jump to other events
 
                 li
                   a href="lemans2004" Le Mans 2004
                 li
                   a href="rtl2_2004" RTL2
-                li 
+                li
                   a href="lemans2006" Le Mans 2006
                 li.active
                   a href="hayonwye2007" Hay On Wye 2007
-                li 
+                li
                   a href="meetingparis2008" Meet & Greet Paris
-                li 
+                li
                   a href="legrandjournal2015" Le Grand Journal
 
 
                   br
-                    
+
         = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/events/side_bar'

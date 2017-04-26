@@ -6,42 +6,43 @@
 .cal-panel h4 {
   text-align: center;
   padding-bottom: 15px;
+  color: #29313f;
 }
-/* line 6, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 7, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .cal-panel a:hover {
-  color: #337cbb;
+  color: #3D495F;
 }
 
-/* line 9, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 10, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .about-cal {
   margin-top: 50px;
 }
 
-/* line 13, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 14, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-preview {
   width: 100%;
   border: black solid 1px;
   margin-top: 2px;
 }
 
-/* line 18, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 19, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-portrait {
   max-width: 600px;
 }
 
-/* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 22, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .btn-cal {
   margin-top: 20px !important;
   float: left !important;
 }
 
-/* line 25, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 26, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-presentation {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-/* line 29, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 30, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .small-cal {
   width: 80px;
   -webkit-filter: grayscale(100%);
@@ -49,7 +50,7 @@
 /* line 33, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .small-cal:hover {
   width: 90px;
-  border: 5px solid #337cbb;
+  border: 5px solid #3D495F;
   -webkit-transition: 0.3s;
   -webkit-filter: none;
 }
@@ -85,7 +86,7 @@ hr.paypal-top {
 
 /* line 60, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 hr .calendar-hr {
-  border-top: #337cbb solid 1px !important;
+  border-top: #3D495F solid 1px !important;
 }
 
 @media screen and (max-width: 990px) {
@@ -118,13 +119,13 @@ hr .calendar-hr {
 /* line 17, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .tour-title {
   text-align: center;
-  color: #114A74;
+  color: #3D495F;
 }
 
 /* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .time-ago {
   font-style: italic;
-  color: #337cbb;
+  color: #3D495F;
   margin-left: 35px;
 }
 
@@ -172,7 +173,7 @@ hr .calendar-hr {
 
 /* line 54, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .set-list {
-  color: #337cbb;
+  color: #3D495F;
   font-size: 12px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -187,7 +188,7 @@ hr .calendar-hr {
 /* line 66, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .menu-right {
   margin-top: 140px;
-  border-left: 3px solid #337cbb;
+  border-left: 3px solid #3D495F;
 }
 
 /* line 70, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
@@ -199,7 +200,7 @@ hr .calendar-hr {
 /* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .circle-menu:hover {
   width: 90px;
-  border: 6px solid #337cbb;
+  border: 6px solid #3D495F;
   -webkit-transition: 0.3s;
   -webkit-filter: none;
 }
@@ -212,7 +213,7 @@ hr .calendar-hr {
 
 /* line 84, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .side-title {
-  color: #337cbb;
+  color: #3D495F;
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -295,112 +296,125 @@ hr .calendar-hr {
 /* line 1, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .landing-video {
   position: absolute;
+  margin-top: -2px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: grayscale(80%);
+  filter: grayscale(85%);
   z-index: 1;
   min-width: 100%;
   min-height: 100%;
 }
 
-/* line 11, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 12, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .main-title {
-  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
   text-align: center;
   width: 100%;
   z-index: 2;
-  color: #337cbb;
+  color: #ffffff;
   font-weight: bolder !important;
 }
-/* line 18, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
-.main-title h1, .main-title p {
-  color: #ffffff !important;
+/* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.main-title h1 {
+  font-size: 100px !important;
+  font-style: bold;
+}
+/* line 25, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.main-title p {
+  color: #ffffff;
 }
 
-/* line 22, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 29, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .navbar {
-  background-color: #337cbb;
+  background-color: #29313f;
   border-radius: 0px !important;
 }
 
-/* line 27, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 33, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.title-dark {
+  color: #3D495F;
+}
+
+/* line 37, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .navbar-toggle .icon-bar {
   background-color: #ffffff !important;
 }
 
-/* line 30, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 40, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .collapse {
-  background: #337cbb !important;
+  background: #29313f !important;
 }
 
-/* line 34, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 44, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .nav a {
   color: #FFFFFF !important;
   text-decoration: none;
 }
-/* line 37, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 47, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .nav a:hover {
-  background-color: #64A6DD !important;
+  background-color: #3D495F !important;
 }
 
-/* line 40, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 50, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .fa {
   color: #ffffff !important;
 }
 
-/* line 43, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 53, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .band {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 47, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 57, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail {
   text-align: justify !important;
   padding: 10px !important;
   color: #000000 !important;
 }
-/* line 48, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 58, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail h3 {
   text-align: center !important;
 }
-/* line 54, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 64, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail img {
   width: 100%;
 }
 
-/* line 57, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 67, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 4px;
 }
-/* line 58, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 68, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow a:hover {
   text-decoration: none;
 }
 
-/* line 64, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow:hover {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
 
-/* line 69, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 79, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .section-title {
-  color: #64A6DD;
+  color: #3D495F;
   margin-top: 5px;
   padding: 5px;
 }
 
-/* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 84, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .section-description {
   padding-left: 5px;
   color: #636161;
 }
 
-/* line 78, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 88, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .site-description {
   padding-left: 5px;
   padding-top: 100px;
@@ -408,83 +422,88 @@ hr .calendar-hr {
   color: #636161;
 }
 
-/* line 85, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 95, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .under-section {
   margin-bottom: 20px;
 }
 
-/* line 88, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 98, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer {
   position: relative;
-  background-color: #337cbb;
+  background-color: #29313f;
   padding-bottom: 15px;
 }
 
-/* line 93, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 103, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-content {
   color: #ffffff;
   padding-top: 20px;
 }
 
-/* line 97, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 107, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
-/* line 100, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 110, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text span, a span {
   color: #ffffff;
 }
-/* line 102, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 112, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text span:hover, a span:hover {
   color: gray;
 }
 
-/* line 107, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 117, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 111, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 121, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 114, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 124, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 118, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 128, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 123, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 133, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .section-title {
-    color: #64A6DD;
+    color: #3D495F;
     margin-top: 5px;
     font-size: 20px;
   }
 
-  /* line 128, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 138, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .footer-text {
     font-size: 80%;
   }
 
-  /* line 130, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 140, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .fa {
     font-size: 80% !important;
   }
+
+  /* line 144, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  .main-title h1 {
+    font-size: 80px !important;
+  }
 }
 @media screen and (max-width: 990px) {
-  /* line 134, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 148, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .section-title {
-    color: #64A6DD;
+    color: #3D495F;
     margin-top: 5px;
     font-size: 25px;
   }
@@ -2519,7 +2538,7 @@ mark,
 }
 
 /* line 5, /Users/nellyduclos/.rvm/gems/ruby-2.3.3/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.title-dark {
+.text-primary {
   color: #337ab7;
 }
 
@@ -9339,112 +9358,125 @@ button.close {
 /* line 1, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .landing-video {
   position: absolute;
+  margin-top: -2px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: grayscale(80%);
+  filter: grayscale(85%);
   z-index: 1;
   min-width: 100%;
   min-height: 100%;
 }
 
-/* line 11, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 12, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .main-title {
-  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
   text-align: center;
   width: 100%;
   z-index: 2;
-  color: #337cbb;
+  color: #ffffff;
   font-weight: bolder !important;
 }
-/* line 18, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
-.main-title h1, .main-title p {
-  color: #ffffff !important;
+/* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.main-title h1 {
+  font-size: 100px !important;
+  font-style: bold;
+}
+/* line 25, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.main-title p {
+  color: #ffffff;
 }
 
-/* line 22, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 29, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .navbar {
-  background-color: #337cbb;
+  background-color: #29313f;
   border-radius: 0px !important;
 }
 
-/* line 27, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 33, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+.title-dark {
+  color: #3D495F;
+}
+
+/* line 37, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .navbar-toggle .icon-bar {
   background-color: #ffffff !important;
 }
 
-/* line 30, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 40, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .collapse {
-  background: #337cbb !important;
+  background: #29313f !important;
 }
 
-/* line 34, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 44, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .nav a {
   color: #FFFFFF !important;
   text-decoration: none;
 }
-/* line 37, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 47, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .nav a:hover {
-  background-color: #64A6DD !important;
+  background-color: #3D495F !important;
 }
 
-/* line 40, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 50, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .fa {
   color: #ffffff !important;
 }
 
-/* line 43, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 53, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .band {
   width: 100%;
   border-radius: 3px;
 }
 
-/* line 47, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 57, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail {
   text-align: justify !important;
   padding: 10px !important;
   color: #000000 !important;
 }
-/* line 48, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 58, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail h3 {
   text-align: center !important;
 }
-/* line 54, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 64, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .thumbnail img {
   width: 100%;
 }
 
-/* line 57, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 67, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 4px;
 }
-/* line 58, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 68, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow a:hover {
   text-decoration: none;
 }
 
-/* line 64, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .make-it-slow:hover {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
 }
 
-/* line 69, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 79, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .section-title {
-  color: #64A6DD;
+  color: #3D495F;
   margin-top: 5px;
   padding: 5px;
 }
 
-/* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 84, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .section-description {
   padding-left: 5px;
   color: #636161;
 }
 
-/* line 78, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 88, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .site-description {
   padding-left: 5px;
   padding-top: 100px;
@@ -9452,83 +9484,88 @@ button.close {
   color: #636161;
 }
 
-/* line 85, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 95, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .under-section {
   margin-bottom: 20px;
 }
 
-/* line 88, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 98, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer {
   position: relative;
-  background-color: #337cbb;
+  background-color: #29313f;
   padding-bottom: 15px;
 }
 
-/* line 93, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 103, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-content {
   color: #ffffff;
   padding-top: 20px;
 }
 
-/* line 97, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 107, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text, a {
   color: #ffffff;
   text-decoration: none !important;
 }
-/* line 100, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 110, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text span, a span {
   color: #ffffff;
 }
-/* line 102, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 112, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .footer-text span:hover, a span:hover {
   color: gray;
 }
 
-/* line 107, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 117, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .photos-album {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-/* line 111, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 121, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 #my-caroussel {
   width: 20px;
 }
 
-/* line 114, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 124, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .carousel-control.left {
   color: #ffffff;
   font-size: 100px;
 }
 
-/* line 118, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+/* line 128, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
 .carousel-control.right {
   color: #ffffff;
   font-size: 100px;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 123, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 133, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .section-title {
-    color: #64A6DD;
+    color: #3D495F;
     margin-top: 5px;
     font-size: 20px;
   }
 
-  /* line 128, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 138, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .footer-text {
     font-size: 80%;
   }
 
-  /* line 130, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 140, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .fa {
     font-size: 80% !important;
   }
+
+  /* line 144, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  .main-title h1 {
+    font-size: 80px !important;
+  }
 }
 @media screen and (max-width: 990px) {
-  /* line 134, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
+  /* line 148, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/general.sass */
   .section-title {
-    color: #64A6DD;
+    color: #3D495F;
     margin-top: 5px;
     font-size: 25px;
   }
@@ -9557,13 +9594,13 @@ button.close {
 /* line 17, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .tour-title {
   text-align: center;
-  color: #114A74;
+  color: #3D495F;
 }
 
 /* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .time-ago {
   font-style: italic;
-  color: #337cbb;
+  color: #3D495F;
   margin-left: 35px;
 }
 
@@ -9611,7 +9648,7 @@ button.close {
 
 /* line 54, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .set-list {
-  color: #337cbb;
+  color: #3D495F;
   font-size: 12px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -9626,7 +9663,7 @@ button.close {
 /* line 66, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .menu-right {
   margin-top: 140px;
-  border-left: 3px solid #337cbb;
+  border-left: 3px solid #3D495F;
 }
 
 /* line 70, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
@@ -9638,7 +9675,7 @@ button.close {
 /* line 74, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .circle-menu:hover {
   width: 90px;
-  border: 6px solid #337cbb;
+  border: 6px solid #3D495F;
   -webkit-transition: 0.3s;
   -webkit-filter: none;
 }
@@ -9651,7 +9688,7 @@ button.close {
 
 /* line 84, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/concerts.sass */
 .side-title {
-  color: #337cbb;
+  color: #3D495F;
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -9705,42 +9742,43 @@ button.close {
 .cal-panel h4 {
   text-align: center;
   padding-bottom: 15px;
+  color: #29313f;
 }
-/* line 6, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 7, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .cal-panel a:hover {
-  color: #337cbb;
+  color: #3D495F;
 }
 
-/* line 9, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 10, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .about-cal {
   margin-top: 50px;
 }
 
-/* line 13, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 14, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-preview {
   width: 100%;
   border: black solid 1px;
   margin-top: 2px;
 }
 
-/* line 18, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 19, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-portrait {
   max-width: 600px;
 }
 
-/* line 21, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 22, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .btn-cal {
   margin-top: 20px !important;
   float: left !important;
 }
 
-/* line 25, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 26, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .calendar-presentation {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-/* line 29, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
+/* line 30, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .small-cal {
   width: 80px;
   -webkit-filter: grayscale(100%);
@@ -9748,7 +9786,7 @@ button.close {
 /* line 33, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 .small-cal:hover {
   width: 90px;
-  border: 5px solid #337cbb;
+  border: 5px solid #3D495F;
   -webkit-transition: 0.3s;
   -webkit-filter: none;
 }
@@ -9784,7 +9822,7 @@ hr.paypal-top {
 
 /* line 60, /Users/nellyduclos/code/knopfler81/perso/mark_knopfler_site/app/assets/stylesheets/calendars.sass */
 hr .calendar-hr {
-  border-top: #337cbb solid 1px !important;
+  border-top: #3D495F solid 1px !important;
 }
 
 @media screen and (max-width: 990px) {

@@ -11,9 +11,9 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
-        .col-md-offset-1.col-md-10         
+        .col-md-offset-1.col-md-10
           p That was the second time that Mark played in this crowded amphitheater! I had special emotion coming back to Fourvière Arena as it was here I saw Mark for the very first time in 1996 and also because my mum came to the concert (she prefered to sit than standing at the front, so we didn’t stay together.) Mark was playing here for the Famous Festival “ Les Nuits De Fourvière”.
           p We queued at the MK.com entrence, as we had presales tickets. We were a bit worried because there were some VIP who came in before us... Actually and fortunately they came in to have diner first and had a booked area in the venue...( no front row for them pheew).
           p Then came our turn to enter and to pick up our tix... We waited like sheeps queueing again in the venue before they let us enter little by little...and wait again just before the last rush...  When the guy said that’s ok you can go now! We needed a second to react... Security guys were laughting of seeing us runing like fools.
@@ -34,8 +34,8 @@
           p Sadly I couldn’t stay for the after show meeting, I had to go back home, I had a train to Nîmes early in the next morning.
           p I arrived home around 1:30 am and had to wake up at 6:30 am... short Seelp!
 
-                
-          
+
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -60,18 +60,18 @@
                 =image_tag("concerts/2010/lyon2010/lyon10-9.jpg")
               .item
                 =image_tag("concerts/2010/lyon2010/lyon10-10.jpg")
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
 
                 li
                   a href="london1" London 1sr
@@ -87,10 +87,10 @@
                   a href="lyon"   Lyon
                 li
                   a href="nimes"  Nîmes
-              
+
 
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/getlucky/side_bar'

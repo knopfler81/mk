@@ -3,16 +3,16 @@
     .col-md-9
       .row.calendar-presentation
         .col-md-offset-4.col-md-4
-          h2.text-primary Calendar 2006 
+          h2.title-dark Calendar 2006
         .col-md-2
           = link_to  "https://dl.orangedox.com/RCnyyoz5qUaBekQu9K/Calendar-Knopfler2016-pdf.zip",
             target: "_blank",
             class: "btn btn-primary btn-cal" do
             span<> Download
             i.fa.fa-download
-          
-      
-          
+
+
+
       .row
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -41,15 +41,15 @@
                 =image_tag("calendars/calendar2006/2006-11.jpg")
               .item
                 =image_tag("calendars/calendar2006/2006-12.jpg")
-                                 
+
               = render partial:('pages/concerts/carousel')
-              
-              
+
+
           .row
             .visible-xs.visible-sm.text-center
               nav
                 ul.pagination.pagination-sm
-                  h6.text-primary Jump to other calendars
+                  h6.title-dark Jump to other calendars
 
                   li.active
                     a href="2006" 2006
@@ -74,13 +74,13 @@
                   li
                     a href="2016" 2016
                 br
-                      
-              = link_to 'Back to Calendars', page_path('calendars/index'), class:' btn btn-info', style:"margin-bottom: 20px"
-        
 
-              
-    = render partial:'pages/calendars/side_bar' 
-    br  
+              = link_to 'Back to Calendars', page_path('calendars/index'), class:' btn btn-info', style:"margin-bottom: 20px"
+
+
+
+    = render partial:'pages/calendars/side_bar'
+    br
 
 
 

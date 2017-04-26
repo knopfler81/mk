@@ -11,12 +11,12 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p Second concert in Amsterdam! Better than the day before MK and the band were very brilliant! They looked happy to be on stage! MK smiled a lot! The Newbie John McCusker is a really amazing musician, it seems that Mark really enjoys playing with him. I was also on the right tonight because I though that MK was much turned to his left to Richard... but it's finally not true... Folks told me that he was great also from the left. They Switched Postcards from Paraguay with Devil Baby! Another one from The Ragipickers Dreams Album ! Fantastic song ! Slower than the studio version but, even better in live.
           p Once again the concert lasted around 2 hours, so short for hard die fans like us! But we still got some gigs left hopefully...And the tour is just starting! As it was their first show MK's voice is really perfect, unfortunately it will become less good with time... because of tiredness, I guess but the guitar playing will be rather better in few times! As they are better each night ! So I guess that Paris and London will be marvellous!
-      
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -43,26 +43,26 @@
                 =image_tag("concerts/2008/amsterdam2008-2/adam08-2-10.jpg")
 
 
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="amsterdam1"  Amsterdam
                 li.active
                   a href="amsterdam2"  Amsterdam
                 li
-                  a href="rotterdam"  Rotterdam  
+                  a href="rotterdam"  Rotterdam
                 li
                   a href="paris"  Paris
                 li
@@ -71,7 +71,7 @@
                   a href="london1"  London1st
 
                   br
-                    
+
             = link_to 'Back to Kill To Get Crimson Tour', page_path('concerts/ktgc'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/ktgc/side_bar'

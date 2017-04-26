@@ -11,16 +11,16 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
-          
-          
+
+
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p This time I had to drive to the airport quite early in the morning, St Expupery isn't a huge airport but terminal 3 was quite a long walk to get there, looooong corridors!!
-          p  I travelled with the airline called Easyjet! It's a pretty nice one. I landed to Gatwick airport, and then took a train to Brighton! I met a couple of French guys at the train station and we went together for a snack near the seashore ! What fantastic weather, really ! I left cloudy France for sunny UK! Amazing !
-          p Later I met up with Ingrid Maarten, the three of us will share the room for the night.  We joined Martina in a very nice restaurant before the show, Jamie Oliver something... The food was excellent ! You can definitely have good food in the UK, just chose the right place!!!
+          p I travelled with the airline called Easyjet! It's a pretty nice one. I landed to Gatwick airport, and then took a train to Brighton! I met a couple of French guys at the train station and we went together for a snack near the seashore ! What fantastic weather, really ! I left cloudy France for sunny UK! Amazing !
+          p Later I met up with Ingrid Maarten, the three of us will share the room for the night. We joined Martina in a very nice restaurant before the show, Jamie Oliver something... The food was excellent ! You can definitely have good food in the UK, just chose the right place!!!
           p So show time arrived Martina picked up our tix and we actually got surprised we had nicer seats than expected!! Very front row but not to the very left as it had to be!! Lucky us !! Brighton's venue is actually pretty small, a nice place though ! There I also met Arthur, a pity we could just chat for couple of minutes, but it was great meeting him again! The show has started pretty early 7:30/45 can't recall really...
-          p Like all this tour performances the guys were in a real good mood tonight ! I think I've never seen Mark as happy on stage so far! He smiles a lot, kinda dancing ! He is really pleasant to watch !  Set list was great I missed SOS which is for me a must to be played... But I am ok anyway I still have many other shows to attended. The stage in Brighton is pretty high, when we rush there I was lucky enough (tall enough) to put my chin on the stage and enjoy the view! The sound was really good while seated, and even at the very front during the encores! I took many pictures and I've been told that Mark was watching me... I didn't notice... What was he thinking ? Well I don't mind, we were allowed I didn't use flash, switched all the noisy little things and lights . When the band was about to leave stage Mark came over to me and shook my hand ( oh gosh he has lots of strength in his hand believe me, that was a very heavy one!!). I really felt happy with that 2 second moment.  Then came Going Home with Nigel Hitchcock, I can't explain what happened to me! Big tears arrived it was incredible I couldn't stop it... I'm too sensitive I suppose, hand shake plus Going Home was the mean reason I suppose !
+          p Like all this tour performances the guys were in a real good mood tonight ! I think I've never seen Mark as happy on stage so far! He smiles a lot, kinda dancing ! He is really pleasant to watch ! Set list was great I missed SOS which is for me a must to be played... But I am ok anyway I still have many other shows to attended. The stage in Brighton is pretty high, when we rush there I was lucky enough (tall enough) to put my chin on the stage and enjoy the view! The sound was really good while seated, and even at the very front during the encores! I took many pictures and I've been told that Mark was watching me... I didn't notice... What was he thinking ? Well I don't mind, we were allowed I didn't use flash, switched all the noisy little things and lights . When the band was about to leave stage Mark came over to me and shook my hand ( oh gosh he has lots of strength in his hand believe me, that was a very heavy one!!). I really felt happy with that 2 second moment. Then came Going Home with Nigel Hitchcock, I can't explain what happened to me! Big tears arrived it was incredible I couldn't stop it... I'm too sensitive I suppose, hand shake plus Going Home was the mean reason I suppose !
           p I really had a wonderful time and look forward for the next shows ! London RAH !!!
           p We went to a nice pub for a couple of drinks but I was a little tired so I walked to the Hotel first, which wasn’t that far, but I really felt safer in Brighton than in my hometown ! I really felt on holiday there, walking back to the hotel !
 
@@ -52,19 +52,19 @@
                 =image_tag("concerts/2013/brighton2013/brighton13-11.JPG")
               .item
                 =image_tag("concerts/2013/brighton2013/brighton13-12.JPG")
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="berlin"  Berlin
@@ -79,7 +79,7 @@
                 li
                   a href="paris"  Paris
                 li
-                  a href="clermont"  Clermont 
+                  a href="clermont"  Clermont
                 li
                   a href="dijon"  Dijon
                 li
@@ -91,10 +91,10 @@
                 li
                   a href="Carcassonne" Carsassonne
                 / li
-                /   a aria-label="Next" href="#" 
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/privateering/side_bar'

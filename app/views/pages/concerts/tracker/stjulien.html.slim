@@ -7,14 +7,14 @@
         .col-md-8.col-xs-12
           h2.text-primary.concert-title St Julien En Genevois
           h4.concert-date 16th July 2015
-          
+
           - start_time =  "2015-07-16 19:00:00 +0100"
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
-              
-          
+
+
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p.text-bold Here we are again in this Saint Julien Town...
@@ -36,7 +36,7 @@
               p 06. Skydiver
               p 07. Romeo and Juliet
               p 08. Sultans of Swing
-            
+
             .col-md-4
               p 09. Your Latest Trick (She's Gone as intro)
               p 10. Postguards from Paraguay
@@ -45,7 +45,7 @@
               p 13. Telegraph Road
               p 14. So Far Away
               p 15. Going Home
-              
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p It was very warm in there, that the water fight tradition restarted, I was soacked, but so refershed !
@@ -80,7 +80,7 @@
               .item
                 =image_tag("concerts/2015/saintjulien2015/saintjulien15-12.jpg")
               .item
-                =image_tag("concerts/2015/saintjulien2015/saintjulien15-13.jpg") 
+                =image_tag("concerts/2015/saintjulien2015/saintjulien15-13.jpg")
               .item
                 =image_tag("concerts/2015/saintjulien2015/saintjulien15-14.jpg")
               .item
@@ -92,17 +92,17 @@
               .item
                 =image_tag("concerts/2015/saintjulien2015/saintjulien15-18.jpg")
               .item
-                =image_tag("concerts/2015/saintjulien2015/saintjulien15-19.jpg")            
+                =image_tag("concerts/2015/saintjulien2015/saintjulien15-19.jpg")
               .item
-                =image_tag("concerts/2015/saintjulien2015/saintjulien15-20.jpg")                            
-                 
+                =image_tag("concerts/2015/saintjulien2015/saintjulien15-20.jpg")
+
             = render partial:('pages/concerts/carousel')
-      
+
       .row
         .visible-xs.visible-sm.text-center
           nav
             ul.pagination.pagination-sm
-              h6.text-primary Jump to other concerts
+              h6.title-dark Jump to other concerts
               li
                 a href="sion"  Sion
               li.active
@@ -123,7 +123,7 @@
                 a href="london1"  London 1st
 
                 br
-                  
+
           = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
     = render partial:'pages/concerts/tracker/side_bar'

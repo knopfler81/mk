@@ -11,15 +11,15 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
-          
-          p After an overbooked morning at work, I’ve finally left my office in time to catch my trains from St Etienne to Paris.  I arrived in Paris in the middle of the afternoon , checked in, in my «luxurious» hotel (the walls so think that I heard my room neighbour snoring...).
+
+          p After an overbooked morning at work, I’ve finally left my office in time to catch my trains from St Etienne to Paris. I arrived in Paris in the middle of the afternoon , checked in, in my «luxurious» hotel (the walls so think that I heard my room neighbour snoring...).
           p Adrien from the AFMK was in a hotel close to mine, so we walked together to the venue. On our way we met some folks of the AFMK and went to the Brasserie for a drink (or two...) and an early dinner (for me)... I received a phone call from a friend who was queueing to pick up the tickets, he warned us that the organisation was a mess and that it was taking ages to get the tix... We immediately went to the box office and YES it was a mess and YES the queue was looooong...As I didn’t have to queue I went talking with my friends Laurent, Isaac and Jeroen who had almost finished queuing ( I think something like 50min). Then a naughty idea came to me... I managed to get the two friends who had to queue to have a chat with Isaac & Co...(you see?).
           p Well now with the tix in the pocket we entered in Big Bercy, we really didn’t know what our seat numbers could be... And actually the surprise was wonderful ! Straight in the middle ! What Else ??
           p As in London, Ruth Moody was the opening supportthe , I don’t know why but more I see her more I like her! She’s a really pleasant young lady with great chaps in her band !
-          p After a 30 min break to set up the stage, MK finally arrived in a very good mood as every night on this tour !  It was also for me THE night to learn how to set my new digital camera «sigh»...You’ll see the pics... The set list hasn’t changed a lot for a couple of weeks now... I’m not complaining I love the way it is ! But a set with out Sultans of Swing is kinda «little less exciting...» That’s only my feeling and maybe it’s the very first time I admit I’m little disappointed but I’ll survive! And INDEED it’s Mark’s choice and I respect that !!
+          p After a 30 min break to set up the stage, MK finally arrived in a very good mood as every night on this tour ! It was also for me THE night to learn how to set my new digital camera «sigh»...You’ll see the pics... The set list hasn’t changed a lot for a couple of weeks now... I’m not complaining I love the way it is ! But a set with out Sultans of Swing is kinda «little less exciting...» That’s only my feeling and maybe it’s the very first time I admit I’m little disappointed but I’ll survive! And INDEED it’s Mark’s choice and I respect that !!
           p As with every MK concert we prepare (pack our stuff) to rush to the stage at the end of Telegraph Road... But In France it’s different we are used to rush after the song before, Speedway at Nazareth ; and this year something silly happened! A guy from nowhere first rushed to the stage alone, stood in front of us ! I think it took us a couple of seconds to react that IT WAS TIME to follow him!
           p When we were at the very front of the stage everything changed ! The atmosphere, the comfort, the excitement, the heating... I’ve started feeling bad during TR but I managed to focus on MK thinking «no Nelly don’t fall not now please» and it worked !
           p Those wonderful shows are always too short, we wish they would never end.... Till the next one... Clermont Ferrand ( two days to wait) !
@@ -53,19 +53,19 @@
                 =image_tag("concerts/2013/paris2013/paris13-11.jpg")
               .item
                 =image_tag("concerts/2013/paris2013/paris13-12.jpg")
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="berlin"  Berlin
@@ -80,7 +80,7 @@
                 li.active
                   a href="paris"  Paris
                 li
-                  a href="clermont"  Clermont 
+                  a href="clermont"  Clermont
                 li
                   a href="dijon"  Dijon
                 li
@@ -92,10 +92,10 @@
                 li
                   a href="Carcassonne" Carsassonne
                 / li
-                /   a aria-label="Next" href="#" 
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/privateering/side_bar'
