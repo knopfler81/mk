@@ -1,14 +1,13 @@
 .cover
-  /=video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, poster:"https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e",class:"landing-video")
-  .cover-image
+  =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], autoplay:true, loop:true, poster:"image-url('landing.jpg')",class:"landing-video")
   .main-title
-  
+
     h1 Mark Knopfler
     p Mark in summer long ago
     br
     =link_to root_path(@root, anchor: "about") do
       i.fa.fa-4x.fa-arrow-down
-          
+
 .section
   .container
     .row
@@ -41,7 +40,7 @@
             .thumbnail
               = image_tag("mains/events.jpg", class:"category")
               h3.section-title Other events
-        
+
 .section
   .container
     .col-md-12
@@ -56,21 +55,21 @@
               h3.section-title Official MK Website
               p.section-description MK.com
               p.section-description Visit the very official MK website, tour dates, shop, annoucements...
-          
+
       .col-xs-12.col-sm-4.col-md-4.under-section
         .make-it-slow
           =link_to  "http://www.guyfletcher.co.uk/", target:'_blank'  do
             .thumbnail
               = image_tag("mains/gf.jpg", class:"category")
-              h3.section-title Guy Fletcher 
+              h3.section-title Guy Fletcher
               p.section-description A very intersting Website to keep in your favorites.
               p.section-description Guy Fletcher runs here a forum, studio and tour diaries ! Have a look !
-        
+
       .col-xs-12.col-sm-4.col-md-4.under-section
         .make-it-slow
           = link_to "http://www.amarkintime.org/forum/", target:'_blank' do
             .thumbnail
               = image_tag("mains/forum.jpg", class:"category")
               h3.section-title AMIT forum
-              p.section-description A very nice place to exchange with fans from all over the world! This a non official forum. 
+              p.section-description A very nice place to exchange with fans from all over the world! This a non official forum.
               p.section-description Be cool and do not moan !
