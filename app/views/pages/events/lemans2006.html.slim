@@ -10,21 +10,21 @@
           - start_time =  "2006-07-07 12:00:00 +0100"
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
-          p.time-ago  One of my best memories... I met Mark Knopfler again, #{date} ago 
-          
+          p.time-ago  One of my best memories... I met Mark Knopfler again, #{date} ago
+
       .row.review-body
-        .col-md-offset-1.col-md-10  
-        
-          p After a long and tiering trip I arrived in Le Mans to support and try to meet my giutar hero…. 
-          p You should guess who…Mark Knopfler indeed!! Very early on Friday morning I went to the tickets office, to buy my dear tickets with which I could get in Mark’s paddock. After going round for a while admiring the wonderful old cars I discovered MK’s beautiful Austin Healey from 1954 N°36. 
+        .col-md-offset-1.col-md-10
+
+          p After a long and tiering trip I arrived in Le Mans to support and try to meet my giutar hero….
+          p You should guess who…Mark Knopfler indeed!! Very early on Friday morning I went to the tickets office, to buy my dear tickets with which I could get in Mark’s paddock. After going round for a while admiring the wonderful old cars I discovered MK’s beautiful Austin Healey from 1954 N°36.
           p After a nice walk I decided to leave the paddock, and there I saw Mark on his red scooter! Oh Yes! That’s him for sure!!! Mark was in a hurry no time to catch him…
           p The time went… no Mark on the horizon he is quite… discrete…
           p It is just before going to bed that I finally met him! WOW I didn’t believe it anymore!
           p I nearly had all I wanted! An autograph on my Strat back’s cover, kisses and a sweet smile…
           p The night was short, cold and noisy… yeah 24 hours of races! Hard to fall asleep.
           p The day after in the afternoon, I had the chance to see him again… but he was surrounded by other fans and didn’t had time to make a photo with me, but to apologize himself he blowed me a kiss. So I left charmed.
-                
-            
+
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -36,35 +36,35 @@
               .item
                 =image_tag("events/lemans2006/lemans2006-3.jpg")
 
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other events
+                h6.title-dark Jump to other events
 
                 li
                   a href="lemans2004" Le Mans 2004
-                li 
-                  a href="rtl2_2004" RTL2 
+                li
+                  a href="rtl2_2004" RTL2
                 li.active
                   a href="lemans2006" Le Mans 2006
-                li 
+                li
                   a href="hayonwye2007" Hay On Wye 2007
-                li 
+                li
                   a href="meetingparis2008" Meet & Greet Paris
-                li 
+                li
                   a href="legrandjournal2015" Le Grand Journal
 
 
                   br
-                    
+
             = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/events/side_bar'

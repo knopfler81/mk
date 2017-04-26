@@ -11,7 +11,7 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
           h4 The «Wedding» anniversary gig’s !!
@@ -33,7 +33,7 @@
           p Till the next time,
           p So long...
 
- 
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -62,19 +62,19 @@
                 =image_tag("concerts/2013/nimes2013/nimes13-11.jpg")
               .item
                 =image_tag("concerts/2013/nimes2013/nimes13-12.jpg")
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="berlin"  Berlin
@@ -101,10 +101,10 @@
                 li
                   a href="Carcassonne" Carsassonne
                 / li
-                /   a aria-label="Next" href="#" 
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/privateering/side_bar'

@@ -11,7 +11,7 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p.text-bold Third concert in London and at the least the last in the UK.
@@ -21,7 +21,7 @@
           p Then came Paul Crockford to introduce Mark Knopfler and the show started :-)
           p Tonight's atomsphere was less warm than the previous night but the band was at his best !
           p Same old set lit, nothing has changed so far... I wonder if they will keep it this way, btw I wish I could hear more songs of the new album which is just a gem.  Anyway I am happy with all ! I got lucky to be there.
-            
+
           .row.set-list
             .col-md-offset-1.col-md-4
               p 01. Broken Bones
@@ -32,7 +32,7 @@
               p 06. Skydiver (With Ruth Moody)
               p 07. Laughs And Jokes And Drinks And Smokes
               p 08. Romeo And Juliet (With Nigel)
-            
+
             .col-md-4
               p 09. Sultans Of Swing
               p 10. Mighty Man
@@ -80,17 +80,17 @@
                 =image_tag("concerts/2015/london2015-3/london15-3-14.jpg")
               .item
                 =image_tag("concerts/2015/london2015-3/london15-3-15.jpg")
-                              
-                 
+
+
             = render partial:('pages/concerts/carousel')
-            
+
       .row
         .visible-xs.visible-sm.text-center
           nav
             ul.pagination.pagination-sm
-              h6.text-primary Jump to other concerts
+              h6.title-dark Jump to other concerts
               / li
-              /   a aria-label="Previous" href="#" 
+              /   a aria-label="Previous" href="#"
               /     span aria-hidden="true"  &laquo;
               li
                 a href="sion"  Sion
@@ -111,10 +111,10 @@
               li
                 a href="london1"  London 1st
               / li
-              /   a aria-label="Next" href="#" 
+              /   a aria-label="Next" href="#"
               /     span aria-hidden="true"  &raquo;
                 br
-                  
+
           = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
     = render partial:'pages/concerts/tracker/side_bar'

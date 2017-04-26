@@ -11,16 +11,16 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago  Once again I got lucky to meet Mark Knopfler #{date} ago
-          
+
       .row.review-body
-        .col-md-offset-1.col-md-10  
-        
+        .col-md-offset-1.col-md-10
+
           p  It's time for me to share with you my best evening ever!
           p  I attended the gig in Paris Bercy , I was also invited to the Meet And Greet with Ingrid. We had some problems picking up the passes and then finding the access to the meet and greet because the security didn't know where it was. We were really nervous and stressed, we ran all around the Hall (with high heels for me, gloups!). But finally we met a very kind man who brought us to the M&G. I was scared that I would miss it because of the security...
           p  We were around 17 people (but I think only 4 true fans) the others looked like business people. Danny came first and directly shook our hand, and Mark did the same. They played 3 songs all together and then Mark stopped to sign a few autographs and make pictures (while the others where still playing). As always it's a pleasure to meet him, but lots of emotion for me (I was shaking...).
           p  He signed my Kill to get crimson's program and made a picture. After we saw Richard and Guy! So sweet men too!
 
-              
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -32,35 +32,35 @@
               .item
                 =image_tag("events/meetingparis2008/meetingparis2008-3.jpg")
 
-      
-                              
-                 
+
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other events
+                h6.title-dark Jump to other events
 
                 li
                   a href="lemans2004" Le Mans 2004
                 li
                   a href="rtl2_2004" RTL2
-                li 
+                li
                   a href="lemans2006" Le Mans 2006
-                li 
+                li
                   a href="hayonwye2007" Hay On Wye 2007
                 li.active
                   a href="meetingparis2008" Meet & Greet Paris
-                li 
+                li
                   a href="legrandjournal2015" Le Grand Journal
 
 
                   br
-                    
+
             = link_to 'Back to events', page_path('events/index'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/events/side_bar'

@@ -11,7 +11,7 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p Sister Ingrid stayed home for the night, we had a quick lunch before sleeping and a quick breakfast in the morning.  She left first to pick up the boys ( Isaac and Jeroen) at Lyon train ‘station! I left on my own a little later and drove straight to Dijon, 3 hours without stooping ( something that I will never do again, very tiring). I arrived very early at Le Zenith and met Elian and Romain on the parking lot. After a three minutes chat they left to try to meet Mark... I followed them... And «Sigh» we missed him 2 minutes too late...Btw I’m ok with this I’m not «Rudigering» anymore... Sure I’d be happy to talk to him again, but I already got this lucky many times...So I’ve survived !</br>
@@ -20,8 +20,8 @@
           p Set list was almost the same, no surprise...But as I have said before... even if there is no surprise, even if the show is very similar, the feelings are different ! The people you’re with the general atmosphere count a lot, and indeed the behaviour of the musicians !
 
           p Tonight I had to say good bye to my pals before the gig, because I really had to run away as quick as possible at the end of the show to avoid the traffic jam! I did a good job because the gig ended at 11:15pm and I was on the road at 11:30pm ! It was a long long drive but I arrived home safely. ( Oh and I think I’m gonna have my very first speed camera ticket...).
-        
- 
+
+
       .row.photos-album
         .col-md-offset-1.col-md-10
           .carousel.slide#my-carousel
@@ -50,19 +50,19 @@
                 =image_tag("concerts/2013/dijon2013/dijon13-11.jpg")
               .item
                 =image_tag("concerts/2013/dijon2013/dijon13-12.jpg")
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="berlin"  Berlin
@@ -89,10 +89,10 @@
                 li
                   a href="Carcassonne" Carsassonne
                 / li
-                /   a aria-label="Next" href="#" 
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/privateering/side_bar'

@@ -11,7 +11,7 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-          
+
       .row.review-body
         .col-md-offset-1.col-md-10
           p.text-bold Sion is gonna stay in my memorie for ever for diverse reasons:
@@ -24,7 +24,7 @@
           p During Sultans Of Swing Mark had troubles and yelled something like "I'm done", he had sound trouble with his guitar and his amp but it was quickly solved. So this SOS is kinda collector because Mark played it longer and it was perfectly done.
           p As expected  "Your Latst Trick" was also played again, this track is just magical !!
           p This was my last gig of Tracker and I was about not to come I had planed it for the pre sales and finally decided to not make it and changed my mind again.... It was almost a last minute decision ! I don't regret at all
-          
+
           .row.set-list
             .col-md-offset-1.col-md-4
               p 01. Broken Bones
@@ -34,7 +34,7 @@
               p 05. Hill Farmer's Blues
               p 06. Skydiver
               p 07. Romeo and Juliet
-            
+
             .col-md-4
               p 08. Sultans of Swing
               p 09. Your Latest Trick (She's Gone as intro)
@@ -47,7 +47,7 @@
 
           p On our flight back to Annemasse I got lucky to pilote the Robin 3000! it was just incredible thanks Ingrid for letting me on the front thanks MOAT for showing me how to pilote :D
           p My last sentence would be to thank all the people involved of making this tour possible for me this year... Sharing room, car-pooling, Robin 3000 Plane, Xmas presents etc... I won't mention anybody but people will reconize themselves ;)
-        
+
 
       .row.photos-album
         .col-md-offset-1.col-md-10
@@ -88,18 +88,18 @@
               .item
                 =image_tag("concerts/2015/sion2015/sion15-18.jpg")
               .item
-                =image_tag("concerts/2015/sion2015/sion15-19.jpg")                    
-                              
-                 
+                =image_tag("concerts/2015/sion2015/sion15-19.jpg")
+
+
             = render partial:('pages/concerts/carousel')
 
       .row
         .visible-xs.visible-sm.text-center
           nav
             ul.pagination.pagination-sm
-              h6.text-primary Jump to other concerts
+              h6.title-dark Jump to other concerts
               / li
-              /   a aria-label="Previous" href="#" 
+              /   a aria-label="Previous" href="#"
               /     span aria-hidden="true"  &laquo;
               li.active
                 a href="sion"  Sion
@@ -120,10 +120,10 @@
               li
                 a href="london1"  London 1st
               / li
-              /   a aria-label="Next" href="#" 
+              /   a aria-label="Next" href="#"
               /     span aria-hidden="true"  &raquo;
                 br
-                  
+
           = link_to 'Back to Tracker Tour', page_path('concerts/tracker'), class:' btn btn-info', style:"margin-bottom: 20px"
 
     = render partial:'pages/concerts/tracker/side_bar'

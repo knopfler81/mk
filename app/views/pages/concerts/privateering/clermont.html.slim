@@ -11,10 +11,10 @@
           - end_time   =  Time.now
           - date = distance_of_time_in_words(start_time, end_time).to_s
           p.time-ago Great memories from a show I've attended #{date} ago
-    
+
       .row.review-body
         .col-md-offset-1.col-md-10
-          
+
           p Here we are ! The day of Clermont’s show !
           p I’ve really looked forward to this one because my parents had also planned to come with me!
           p We’ve finallllllllly arrived in Clermont, no it wasn’t that a long drive, but we had to face to a little car trouble... The Peugeot couldn’t speed anymore because of (we think) a dead turbo... This was really annyoning ! But actually dad was provident, we left early and arrived at 6pm at Le Zenith ( This very ugly green place was built circular to look like the volcanos around... Trust me that looks more like a bunker or I don’t know what, than a volcano...).
@@ -57,19 +57,19 @@
                 =image_tag("concerts/2013/clermont2013/clermont13-11.jpg")
               .item
                 =image_tag("concerts/2013/clermont2013/clermont13-12.jpg")
-                              
-                 
+
+
               = render partial:('pages/concerts/carousel')
-          
-                
+
+
 
         .row
           .visible-xs.visible-sm.text-center
             nav
               ul.pagination.pagination-sm
-                h6.text-primary Jump to other concerts
+                h6.title-dark Jump to other concerts
                 / li
-                /   a aria-label="Previous" href="#" 
+                /   a aria-label="Previous" href="#"
                 /     span aria-hidden="true"  &laquo;
                 li
                   a href="berlin"  Berlin
@@ -84,7 +84,7 @@
                 li
                   a href="paris"  Paris
                 li.active
-                  a href="clermont"  Clermont 
+                  a href="clermont"  Clermont
                 li
                   a href="dijon"  Dijon
                 li
@@ -96,10 +96,10 @@
                 li
                   a href="Carcassonne" Carsassonne
                 / li
-                /   a aria-label="Next" href="#" 
+                /   a aria-label="Next" href="#"
                 /     span aria-hidden="true"  &raquo;
                   br
-                    
+
             = link_to 'Back to Privateering Tour', page_path('concerts/privateering'), class:' btn btn-info', style:"margin-bottom: 20px"
-    
+
     = render partial:'pages/concerts/privateering/side_bar'
