@@ -1,0 +1,21 @@
+.navbar.navbar-landing
+
+  button.navbar-toggle[type="button" data-toggle="collapse" data-target="#navbar-ex-collapse"]
+    span.sr-only
+      | Toggle navigation
+    span.icon-bar
+    span.icon-bar
+    span.icon-bar
+  .navbar-brand
+    =link_to "MK", root_path
+
+  #navbar-ex-collapse.collapse.navbar-collapse
+    ul.nav.navbar-nav.navbar-right
+      li
+        =link_to "Concerts", page_path('concerts/index')
+      li
+        =link_to "Calendars", page_path('calendars/index')
+      li
+        =link_to "Other Events", page_path('events/index')
+      li
+        = link_to "Contact", new_contact_path(@contact)

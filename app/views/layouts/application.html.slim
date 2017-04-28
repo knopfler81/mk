@@ -4,29 +4,34 @@ html
     title
       | Mark In Summer Long Ago
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta property="og:description" content="Mark In Summer Long Ago, refers to the very first time I saw Mark Knopfler on stage, the 9th July 1996 and to his wonderful song, A Night In Summer Long Ago that I used to listen with my dearly loved grand mother. This website is to share with all the fans my passion of Mark Knopfler's music. Reviews and pictures from the concerts I've atended and also about my meetings with the Man ! I hope You'll enjoy."
     meta property="og:image" content="https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e"
     link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"
     link href="//pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css"
-  = render partial: "layouts/nav"
 
   body
-  
+    -if content_for?(:navbar)
+      =yield(:navbar)
+    -else
+      = render partial: "layouts/nav"
+
+
     .container
       - flash.each do |name, msg|
         - if msg.is_a?(String)
-          div class=("alert alert-#{name == :notice ? "success" : "error"}") 
-            a.close data-dismiss="alert" 
+          div class=("alert alert-#{name == :notice ? "success" : "error"}")
+            a.close data-dismiss="alert"
               | &times;
             = content_tag :div, msg, :id => "flash_#{name}"
-            
+
     = yield
-  =render partial: "layouts/footer"
-  /script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
-  // bootstrap caroussel in concerts
+
+    = render partial: "layouts/footer" unless @skip_footer
+
+
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
   javascript:
    $(function(){
      $('#my-carousel').carousel({
