@@ -1,13 +1,21 @@
+/ -content_for :navbar do
+/    = render partial: "layouts/custom_nav"
+
+/ .cover
+/   =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], controls:true, autoplay:true, loop:true, poster:"image-url('landing.jpg')",class:"landing-video")
+/   .main-title
+
+/     h1 MARK
+/     h1 KNOPFLER
+/     br
+
 -content_for :navbar do
    = render partial: "layouts/custom_nav"
 
 .cover
-  =video_tag(["https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4"], controls:true, autoplay:true, loop:true, poster:"image-url('landing.jpg')",class:"landing-video")
+  video[loop autoplay controls="true" src="https://s3-eu-west-1.amazonaws.com/markinsum/MKlanding.mp4" type="video/mp4" class="landing-video"  poster="image-url('landing.jpg')"]
   .main-title
 
     h1 MARK
     h1 KNOPFLER
     br
-
-
-
