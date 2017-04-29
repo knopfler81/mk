@@ -8,12 +8,16 @@
   padding: 0px 30px
   align-items: center
   justify-content: space-between
+  a
+    color: white
 
 .navbar-wagon.custom
   background: rgba(0,0,0,0)
   .navbar-wagon-link:hover
+    color: white
     padding-bottom: 4px
     border-bottom: 4px #3D495F solid
+
 
 /* Optional class to fix the navbar on top */
 .navbar-wagon-fixed
@@ -125,3 +129,11 @@
   transform: rotate(45deg)
   border-left: 1px solid #E6E6E6
   border-top: 1px solid #E6E6E6
+
+@media screen and (max-width: 720px)
+  .navbar-wagon.custom
+    background: rgba(0,0,0,0)
+    color: #3D495F
+    .navbar-wagon-link:hover
+      color: #3D495F
+      border-bottom: inherit
