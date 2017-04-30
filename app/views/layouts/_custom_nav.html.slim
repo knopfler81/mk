@@ -1,11 +1,12 @@
 .navbar-wagon.custom
-  h4
-    = link_to "MK", root_path, class: "navbar-wagon-brand"
-  .navbar-wagon-right.hidden-xs.hidden-sm
-    = link_to "Home", home_path, class: "navbar-wagon-item navbar-wagon-link"
-    = link_to "Concerts", page_path('concerts/index'), class: "navbar-wagon-item navbar-wagon-link"
-    = link_to "Calendars", page_path('calendars/index'), class: "navbar-wagon-item navbar-wagon-link"
-    = link_to "Other Event", page_path('events/index'), class: "navbar-wagon-item navbar-wagon-link"
+  h3
+    = link_to "Mark In Summer Long Ago", root_path, class: "navbar-wagon-brand"
+    hr
+    .navbar-wagon-right.hidden-xs.hidden-sm
+      = link_to "Home", home_path, class: "navbar-wagon-item navbar-wagon-link"
+      = link_to "Concerts", page_path('concerts/index'), class: "navbar-wagon-item navbar-wagon-link"
+      = link_to "Calendars", page_path('calendars/index'), class: "navbar-wagon-item navbar-wagon-link"
+      = link_to "Other Event", page_path('events/index'), class: "navbar-wagon-item navbar-wagon-link"
     //= link_to "Contact",  new_contact_path(@contact), class: "navbar-wagon-item navbar-wagon-link"
   .navbar-wagon-item.hidden-md.hidden-lg
     .dropdown
