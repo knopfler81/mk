@@ -1,0 +1,44 @@
+.tours-content
+  .row
+    .tour-title
+      h1.title-dark Down The Road Wherever Tour 2019
+      br
+      .row
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/1st_london') do
+            =image_tag("concerts/2019/london_1.jpeg", title:"London", class:'circle ')
+            h6 London 1st
+            br
+
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/2nd_london') do
+            =image_tag("concerts/2019/london_2.jpg", title:"London", class:'circle ')
+            h6 London 2nd
+            br
+
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/paris') do
+            =image_tag("concerts/2019/paris.jpg", title:"Paris", class:'circle ')
+            h6 Paris
+            br
+
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/lyon') do
+            =image_tag("concerts/2019/lyon.jpg", title:"Lyon", class:'circle ')
+            h6 Lyon
+            br
+      .row
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/saint_julien') do
+            =image_tag("concerts/2019/stju.jpg", title:"Saint Julien", class:'circle ')
+            h6 Saint Julien
+            br
+
+        .col-xs-12.col-sm-3.col-md-3.col-lg-3
+          = link_to page_path('concerts/dtrw/nimes') do
+            =image_tag("concerts/2019/nimes.jpg", title:"Nîmes", class:'circle ')
+            h6 Nîmes
+            br
+
+
+  = render partial:('pages/concerts/bottom_bar')

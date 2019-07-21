@@ -1,0 +1,43 @@
+.container
+  .row
+    .col-md-12
+      .row.review-title
+        .col-md-offset-1.col-md-2.col-hidden-sm.col-hidden-xs
+          =image_tag("concerts/2006/paris2006/paris06-0.jpg", title:"paris", class:'circle-title')
+        .col-md-8.col-xs-12
+          h2.text-primary.concert-title Nîmes
+          h4.concert-date 15th July 2019
+          - start_time =  "2019-07-15 19:00:00 +0100"
+          - end_time   =  Time.now
+          - date = distance_of_time_in_words(start_time, end_time).to_s
+          p.time-ago Great memories from a show I've attended #{date} ago
+          
+      .row.review-body
+        .col-md-offset-1.col-md-10         
+          p This year I decided not to tale my digital camera... For the last tour I've decided to enjoy every seconds of each show.
+          p Btw I did quick (shit) pics with my iPhone
+
+
+          
+      .row.photos-album
+        .col-md-offset-1.col-md-10
+          .carousel.slide#my-carousel
+            .carousel-inner
+              .active.item
+                =image_tag("concerts/2019/nimes/IMG_3018.jpg")
+              .item
+                =image_tag("concerts/2019/nimes/IMG_3022.jpg")
+              .item
+                =image_tag("concerts/2019/nimes/IMG_3028.jpg")
+              .item
+                =image_tag("concerts/2019/nimes/IMG_3033.jpg")
+      
+                              
+                 
+              = render partial:('pages/concerts/carousel')
+    
+      = render partial:('pages/concerts/bottom_bar')    
+          
+                
+
+

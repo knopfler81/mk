@@ -4,7 +4,10 @@
       .col-xs-12.col-sm-12.col-md-12
         h1.title-dark  My Mark Knopfler's shows across the years
         br
-
+          
+          .col-xs-12.col-sm-6.col-md-4.col-lg-3.cal-panel
+            = link_to page_path('concerts/dtrw')do
+              = image_tag("tours/dtrw.jpg", class: "tours-covers")
 
           .col-xs-12.col-sm-6.col-md-4.col-lg-3.cal-panel
             = link_to page_path('concerts/tracker')do

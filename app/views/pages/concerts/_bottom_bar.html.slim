@@ -3,10 +3,14 @@ hr
     .col-md-12
 
   .row  
-    .col-xs-offset-1.col-xs-1    
+    .col-xs-offset-1.col-xs-1 
+      = link_to page_path('concerts/dtrw') do
+        =image_tag("tours/dtrw", class:'cover-menu ')
+
+    .col-xs-1    
       = link_to page_path('concerts/tracker') do
         =image_tag("tours/tracker", class:'cover-menu ')
-          
+
     .col-xs-1      
       = link_to page_path('concerts/privateering') do
         =image_tag("tours/privateering",  class:'cover-menu ')
