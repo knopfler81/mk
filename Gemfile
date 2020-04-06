@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.6.5"
+ruby '2.6.5'
 
 gem 'high_voltage', '~> 3.0.0'
 gem 'slim', '~> 3.0', '>= 3.0.7'
