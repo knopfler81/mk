@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 ruby "2.5.6"
 
 gem 'high_voltage', '~> 3.0.0'
