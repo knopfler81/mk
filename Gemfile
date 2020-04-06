@@ -12,7 +12,7 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'rails', '4.2.5'
 # Use SCSS for stylesheets
 gem "twitter-bootstrap-rails"
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sass-rails', '>= 3.2'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.0'
 # Use Uglifier as compressor for JavaScript assets
